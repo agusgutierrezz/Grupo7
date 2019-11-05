@@ -1,0 +1,29 @@
+BLAST MOTION JUMP TRACKER
+
+Supported Activities: Layups, Jump Shots, Dunks
+
+Smart Video Capture: Yes
+Adaptive Slow-mo Technology: Yes
+Automatic Video Curation: Yes
+Performance Metric Overlay: Yes
+Smart Notifications – Voice Announcements: Yes
+Bluetooth Smart (Low Energy) Connectivity: Yes
+Share Highlights and Progress: Yes
+Metrics Captured: Jump Acceleration, Vertical Height, Rotation, Hang Time
+Attachment Locations: Waistband
+Sensor Weight: 0.3 oz
+Mobile Operating System:
+
+iOS 8.x, iOS 9.x, iOS 10.x
+Apple iOS Compatible Devices:
+
+iPhone SE, 5, 5c, 5s, 6, 6 Plus, 6s, 6s Plus, 7, 7 Plus, iPad Mini 2, Mini 3, iPad 3, iPad 4, Air, Air 2
+Languages Currently Supported: English
+
+Measurement Units Supported: Imperial
+
+Capaz de analizar meticulosamente saltos, bandejas, clavadas y otras actividades al costado de la cancha, la tecnología de captura de video inteligente de Blast Motion registra una variedad de aspectos interesantes mientras juegas. Después de grabar, integra estos videos con estadísticas personales para ayudar a los usuarios a identificar las fortalezas y debilidades en su juego.
+
+La tecnología funciona a través de un pequeño sensor que se conecta a la parte posterior de la pretina de un usuario, capturando información y enviándola a un teléfono inteligente a través de Bluetooth, ofreciendo retroalimentación en tiempo real y resúmenes posteriores al juego. La aplicación complementaria —que se puede vincular a las redes sociales— presenta videos de entrenamiento, ejercicios y consejos para ayudar a cualquiera a ser como Mike.
+
+https://store.blastmotion.com/store/products/basketball/
