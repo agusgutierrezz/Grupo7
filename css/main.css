@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 /* navbar */
-
-
+/*Redimensionar el buscador*/
+.form-inline .form-control{
+  width: 35em!important;
+}
 /* Carousel */
 .carousel.slide{
   background-color: black;
@@ -42,7 +44,7 @@ background-color: rgb(33, 33, 33);
 
 /* Contacto */
 .container-fluid.contact-form{
-  background: rgb(226, 152, 42);
+  /* background: rgb(35, 78, 124); */
 }
 .contact-form{
     background: #fff;
@@ -52,16 +54,23 @@ background-color: rgb(33, 33, 33);
 }
 .contact-form .form-control{
     border-radius:1rem;
+
+}
+/*Cambiar color de foco en formulario*/
+.contact-form .form-control:hover{
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+
 }
 .contact-image{
     text-align: center;
 }
-.contact-image img{
+/* .contact-image img{
     border-radius: 6rem;
     width: 11%;
     margin-top: -3%;
     transform: rotate(29deg);
-}
+} */
 .contact-form form{
     padding: 14%;
 }
@@ -72,7 +81,7 @@ background-color: rgb(33, 33, 33);
     margin-bottom: 8%;
     margin-top: -10%;
     text-align: center;
-    color: #0062cc;
+    color: #fff;
 }
 .contact-form .btnContact {
     width: 50%;
