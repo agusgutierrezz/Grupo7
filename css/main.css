@@ -8,8 +8,18 @@
 /* CAJA TEST FIN */
 
 /* navbar */
-.form-inline .form-control{
-  width: 25em!important; /* Resize del input del buscador */
+.navbar{
+  overflow: hidden;
+}
+.nav-link{
+  color: grey;
+}
+.nav-link:hover{
+  color: rgb(241, 61, 61);
+}
+.form-inline .form-control:focus{
+  border-color: #e41b1b;
+  box-shadow: 0 0 0 0.2rem rgba(167, 71, 40, 0.25);
 }
 /* NavBar Fin */
 
@@ -26,6 +36,9 @@
 }
 .carousel.slide.subBg{
 background-color: rgb(33, 33, 33);
+}
+#carousel{
+  margin-top: 9.4em;
 }
 /* Carousel Fin */
 
@@ -45,14 +58,18 @@ background-color: rgb(33, 33, 33);
 /* Articulos */
 .imgCenter{
   margin: 0;
-  height: 700px;
-  display: flex!important;
-  /* justify-content: space-around; */
+  display: flex;
   align-items: center;
+  overflow:hidden;
 }
 .caja img{
   border: 1px black solid;
   border-radius: 1rem;
+  margin: 1em;
+}
+
+.articulos{
+  overflow: hidden;
 }
 /* Articulos Fin */
 
@@ -95,7 +112,7 @@ background-color: rgb(33, 33, 33);
     margin-bottom: 8%;
     margin-top: -10%;
     text-align: center;
-    color: #fff;
+    color: #AAA;
 }
 .contact-form .btnContact {
     width: 50%;
@@ -133,24 +150,30 @@ footer{
 
 
 
+/* MEDIAQUERYS */
+/* De 576px a 767px resolver porque no me toma el margin top */
+
+@media only screen and(min-width: 576px) {
+  #carousel{
+    margin-top: 5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #carousel{
+    margin-top: 3.5em;
+  }
+ }
+
+@media only screen and (min-width: 992px) {
+  #carousel{
+    margin-top: 3.5em;
+  }
+ }
 
 
-
-
-/* MEDIAQUERIS */
-
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+@media only screen and (min-width: 1200px) {
+  #carousel{
+    margin-top: 3.5em;
+  }
+ }
