@@ -6,7 +6,20 @@
   justify-content: center;
 }
 /* CAJA TEST FIN */
-
+/* Subir */
+#subir{
+  position: fixed;
+  right: 25px;
+  bottom: 15px;
+  overflow: hidden;
+}
+i.fas.fa-arrow-circle-up{
+  color: rgb(215, 43, 43);
+  font-size: 3em;
+}
+#subir a i:hover{
+  color: rgb(209, 79, 79);
+}
 /* navbar */
 .navbar{
   overflow: hidden;
@@ -17,6 +30,9 @@
 .nav-link:hover{
   color: rgb(241, 61, 61);
 }
+.navbar-brand.ml-2{
+  font-size: 2em;
+}
 .form-inline .form-control:focus{
   border-color: #e41b1b;
   box-shadow: 0 0 0 0.2rem rgba(167, 71, 40, 0.25);
@@ -25,7 +41,11 @@
 
 /* Carousel */
 .carousel.slide{
-  background-color: black;
+  background-color: white;
+}
+.fas.fa-angle-left, .fas.fa-angle-right{
+  color: red;
+  font-size: 3em;
 }
 .w-25{
   margin: auto;
@@ -38,7 +58,7 @@
 background-color: rgb(33, 33, 33);
 }
 #carousel{
-  margin-top: 9.4em;
+  margin-top: 11em;
 }
 /* Carousel Fin */
 
@@ -78,7 +98,7 @@ background-color: rgb(33, 33, 33);
   /* background: rgb(35, 78, 124); */
 }
 .contact-form{
-    background: #fff;
+    background: #000101;
     /* margin-top: 1%; */
     /* margin-bottom: 1%; */
     width: 70%;
@@ -142,38 +162,57 @@ footer{
   background: rgb(18, 18, 18);
 }
 .parrafo{
-  height: 5em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.parrafo p a{
+  text-decoration: none;
+  color: white;
+}
+.parrafo p a:hover{
+  color: red;
+}
+.sociales {
+  font-size: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
+.sociales a {
+  padding: 1%;
+  text-decoration: none;
+  color: white;
+}
+.sociales a:hover{
+  color: red;
+}
 
 /* MEDIAQUERYS */
 /* De 576px a 767px resolver porque no me toma el margin top */
 
 @media only screen and(min-width: 576px) {
   #carousel{
-    margin-top: 5em;
+    margin-top: 5.5em;
   }
 }
 
 @media only screen and (min-width: 768px) {
   #carousel{
-    margin-top: 3.5em;
+    margin-top: 4.5em;
   }
  }
 
 @media only screen and (min-width: 992px) {
   #carousel{
-    margin-top: 3.5em;
+    margin-top: 4.5em;
   }
  }
 
 
 @media only screen and (min-width: 1200px) {
   #carousel{
-    margin-top: 3.5em;
+    margin-top: 4.5em;
   }
  }
