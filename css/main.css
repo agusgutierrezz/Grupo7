@@ -20,6 +20,68 @@ i.fas.fa-arrow-circle-up{
 #subir a i:hover{
   color: rgb(209, 79, 79);
 }
+/* modal */
+.nav-tabs{
+  background-color:#161616;
+}
+.tab-content{
+    background-color:#484a51;
+    color:#aaa;
+    padding:5px
+}
+.nav-tabs > li > a{
+  border: medium none;
+  color: #aaa;
+}
+.nav-tabs > li > a:hover{
+  background-color: #303136 !important;
+    border: medium none;
+    border-radius: 0;
+    color:#fff;
+}
+.modal-footer{
+  border-top: none;
+  display: inline;
+  padding: 0px;
+}
+.modal-footer p{
+  color: #c4c4c4;
+}
+.modal-footer p a{
+  font-weight: bold;
+  color: #fff;
+}
+.inputWidthIcon input {
+  padding-left: 7%;
+  border: 2px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 45px;
+  font-size: 20px;
+}
+.inputWidthIcon{
+  position: relative;
+  transition: .3s;
+  margin-bottom: 10px;
+
+}
+.inputWidthIcon i{
+  position: absolute;
+  left: 2%;
+  top: 15px;
+  color: #aaa;
+}
+.inputWidthIcon:hover i{
+  color: #dc3545;
+}
+.inputWidthIcon:hover input{
+  color: #dc3545;
+}
+.modal-footer p{
+  padding-left: 4%;
+}
+
+
 /* navbar */
 .navbar{
   overflow: hidden;
