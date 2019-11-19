@@ -77,10 +77,32 @@ i.fas.fa-arrow-circle-up{
 .inputWidthIcon:hover input{
   color: #dc3545;
 }
+.inputWidthIcon:focus{
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+.inputWidthIcon:focus input{
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+.inputWidthIcon input:focus{
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
 .modal-footer p{
   padding-left: 4%;
 }
 
+/* Modal Carrito */
+.modal.fade .modal-dialog .modal-content{
+  background-color: #161616;
+}
+.modal-content .table{
+  color: #fff;
+}
+.modal-content h4{
+  color: #dc3545;
+}
 
 /* navbar */
 .navbar{
