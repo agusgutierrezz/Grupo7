@@ -1,0 +1,344 @@
+/* modal */
+.nav-tabs{
+  background-color:#161616;
+}
+.tab-content{
+    background-color:#484a51;
+    color:#aaa;
+    padding:5px
+}
+.nav-tabs > li > a{
+  border: medium none;
+  color: #aaa;
+}
+.nav-tabs > li > a:hover{
+  background-color: #303136 !important;
+    border: medium none;
+    border-radius: 0;
+    color:#fff;
+}
+.modal-footer{
+  border-top: none;
+  display: inline;
+  padding: 0px;
+}
+.modal-footer p{
+  color: #c4c4c4;
+}
+.modal-footer p a{
+  font-weight: bold;
+  color: #fff;
+}
+.inputWidthIcon input {
+  padding-left: 7%;
+  border: 2px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 45px;
+  font-size: 20px;
+}
+.inputWidthIcon{
+  position: relative;
+  transition: .3s;
+  margin-bottom: 10px;
+
+}
+.inputWidthIcon i{
+  position: absolute;
+  left: 2%;
+  top: 15px;
+  color: #aaa;
+}
+.inputWidthIcon:hover i{
+  color: #dc3545;
+}
+.inputWidthIcon:hover input{
+  color: #dc3545;
+}
+.modal-footer p{
+  padding-left: 4%;
+}
+
+/* navbar */
+.navbar{
+  overflow: hidden;
+}
+.nav-link{
+  color: grey;
+}
+.nav-link:hover{
+  color: rgb(241, 61, 61);
+}
+.navbar-brand.ml-2{
+  font-size: 2em;
+}
+.form-inline .form-control:focus{
+  border-color: #e41b1b;
+  box-shadow: 0 0 0 0.2rem rgba(167, 71, 40, 0.25);
+}
+/* NavBar Fin */
+
+header{
+  background-color: black;
+  height: 12rem;
+}
+
+header h1{
+  color: red;
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+  padding: 7rem 1rem;
+  margin-bottom: .5rem;
+  margin-top: 0;
+  font-style: italic;
+  font-size: 3.5rem;
+}
+
+.product{
+  position: relative;
+  height: 35rem;
+  width: 48%;
+  padding: 0%;
+  float: left;
+  border-style: solid;
+  margin: 1%;
+  border-radius: 10px;
+}
+
+.photo-container{
+  position: absolute;
+  width: 100%;
+  top: 10px;
+}
+
+.photo{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.special{
+  position: relative;
+  left: 21rem;
+  width: 5rem;
+  background-color: red;
+  top: 21rem;
+  padding: .5rem .5rem;
+  border-radius: 1rem;
+  display: none;
+}
+
+/* Modal Productos*/
+.modal{
+  position: absolute;
+}
+
+.btn-verMas{
+  margin-top: 80%;
+  margin-left: 78%;
+  background-color: red;
+}
+/* Modal Productos Fin */
+
+.product h2{
+  position: absolute;
+  top: 80%;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: xx-large;
+  padding: 1rem;
+}
+
+p{
+  position: absolute;
+  top: 60%;
+  color: black;
+  font-size: -webkit-xxx-large;
+  background-color: red;
+  padding: 0.5rem 0.5rem;
+  left: 1rem;
+  border-radius: 1rem;
+  font-family: 'Anton', sans-serif;
+}
+
+.descripcion{
+  width: 100%;
+  background: blue;
+}
+
+.none{
+  display: none;
+}
+
+/* Footer */
+footer{
+  color: white;
+  background: rgb(18, 18, 18);
+}
+.parrafo{
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.parrafo p a{
+  text-decoration: none;
+  color: white;
+}
+.parrafo p a:hover{
+  color: red;
+}
+.sociales {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sociales a {
+  padding: 1%;
+  text-decoration: none;
+  color: white;
+}
+.sociales a:hover{
+  color: red;
+}
+
+/* Footer */
+footer{
+  color: white;
+  background: rgb(18, 18, 18);
+}
+.parrafo{
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.parrafo p a{
+  text-decoration: none;
+  color: white;
+}
+.parrafo p a:hover{
+  color: red;
+}
+.sociales {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sociales a {
+  padding: 1%;
+  text-decoration: none;
+  color: white;
+}
+.sociales a:hover{
+  color: red;
+}
+
+/* Subir */
+#subir{
+  position: fixed;
+  right: 25px;
+  bottom: 15px;
+  overflow: hidden;
+}
+i.fas.fa-arrow-circle-up{
+  color: rgb(215, 43, 43);
+  font-size: 3em;
+}
+#subir a i:hover{
+  color: rgb(209, 79, 79);
+}
+
+/* ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+.product {
+  position: relative;
+  height: 25rem;
+  width: 30%;
+  padding: 0%;
+  float: left;
+  border-style: solid;
+  margin: 1.66%;
+  border-radius: 10px;
+}
+
+p {
+  position: absolute;
+  top: 55%;
+  color: black;
+  font-size: xx-large;
+  background-color: red;
+  padding: 0.5rem 0.5rem;
+  left: 1rem;
+  border-radius: 1rem;
+  font-family: 'Anton', sans-serif;
+}
+
+.btn-verMas {
+  margin-top: 82%;
+  margin-left: 68%;
+}
+
+.product h2 {
+  position: absolute;
+  top: 72%;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: x-large;
+  padding: 1rem;
+}
+}
+/*
+  ##Device = Desktops
+  ##Screen = 1224px to higher resolution desktops
+*/
+
+@media only screen and (min-width: 1224px) and (max-device-width: 1366px) {
+
+  .product {
+      position: relative;
+      height: 26rem;
+      width: 21%;
+      padding: 0%;
+      float: left;
+      border-style: solid;
+      margin: 2%;
+      border-radius: 10px;
+  }
+
+  p {
+    position: absolute;
+    top: 67%;
+    margin-left: 5%;
+    color: black;
+    font-size: larger;
+    background-color: red;
+    padding: 0.5rem 0.5rem;
+    left: 1rem;
+    border-radius: .5rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.btn-verMas {
+    margin-top: 98%;
+    margin-left: 59%;
+    background-color: red;
+}
+
+.product h2 {
+    position: absolute;
+    top: 75%;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    padding: 1rem;
+}
+}
