@@ -11,43 +11,12 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/7eb1ab4a84.js" crossorigin="anonymous"></script>
   </head>
-
-
-
+  <title>DH Sport</title>
   <body>
-  <!-- NavBar -->
-  <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">DH Sport</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <form class="form-inline justify-content-center my-auto w-100">
-        <input class="form-control mr-sm-2" type="search" placeholder="Buscar">
-        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
-
-      <div>
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li>
-            <a class="nav-link" href="#"><i class="fas fa-user d-inline mr-2"></i>Login<span class="sr-only">(current)</span></a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Registro</a>
-          </li>
-          <li>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-shopping-cart"></i></a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </nav> -->
 
   <!--Modal: Login / Register Form-->
 <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog cascading-modal" role="document">
+  <div class="modal-dialog cascading-modal" role="document">
   <!--Content-->
   <div class="modal-content">
 
@@ -144,19 +113,24 @@
     </div>
   </div>
   <!--/.Content-->
-</div>
+  </div>
 </div>
 <!--Modal: Login / Register Form-->
 
   <nav class="navbar fixed-top  justify-content-center navbar-expand-sm navbar-dark bg-dark">
 
         <a name='home' class="navbar-brand ml-2" href="#"><font color='red'>D</font>H <font color='red'>S</font>port</a>
+        <a name='home' class="navbar-brand ml-2 oculto" href="#"><font color='red'>D</font>H<font color='red'>S</font></a>
+
         <form class="form-inline justify-content-center my-auto w-100">
             <input class="form-control d-inline w-75 mr-sm-2" type="search" placeholder="Buscar: Reloj, Marca, Modelo, Color...">
+            <button class="btn btn-outline-secondary" type="submit">
+            <i class="fas fa-search"></i></button>
             <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
         </form>
         <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm"><i class="fas fa-user d-inline mr-2"></i>Login</a>
-        <a class="nav-link" href="#">Contactanos</a>
+        <a class="nav-link" href="#"><i class="fas fa-envelope prefix"></i></a>
+        <a class="nav-link ocultar" href="#">Contactanos</a>
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-shopping-cart"></i></a>
 
     </nav>
@@ -271,7 +245,7 @@
 <footer class="container-fluid">
   <div class="row">
     <div class="col-12 parrafo">
-      <p><a href="#">Preguntas</a></p>
+      <p><a href="faqs.html">Preguntas</a></p>
       <p><a href="#">Contacto</a></p>
     </div>
   </div>

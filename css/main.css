@@ -99,6 +99,9 @@ i.fas.fa-arrow-circle-up{
   border-color: #e41b1b;
   box-shadow: 0 0 0 0.2rem rgba(167, 71, 40, 0.25);
 }
+.fas.fa-search{
+  color: red;
+}
 /* NavBar Fin */
 
 /* Carousel */
@@ -216,12 +219,17 @@ background-color: rgb(33, 33, 33);
     border: none;
     cursor: pointer;
 }
+iframe{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -20px;
+
+}
 /* Contacto Fin */
 
 /* Footer */
 footer{
   color: white;
-  background: rgb(18, 18, 18);
+  background: rgb(34, 34, 34);
+
 }
 .parrafo{
   margin-top: 1em;
@@ -254,22 +262,73 @@ footer{
 /* MEDIAQUERYS */
 /* De 576px a 767px resolver porque no me toma el margin top */
 
-@media only screen and(min-width: 576px) {
-  #carousel{
-    margin-top: 5.5em;
-  }
+@media only screen and (max-width: 575px) {
+form.form-inline.justify-content-center.my-auto.w-100 input{
+  display: none!important;
+}
+.navbar{
+  flex-wrap: nowrap!important;
+}
+.navbar-brand.ml-2{
+  display: none;
+}
+.navbar-brand.ml-2.oculto{
+  display: inline!important;
 }
 
-@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 576px) {
   #carousel{
     margin-top: 4.5em;
   }
+  .navbar-brand.ml-2.oculto{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 770px) {
+  #carousel{
+    margin-top: 5.5em;
+  }
+.btn.btn-danger.my-2.my-sm-0{
+  display: none;
+  }
+  .btn.btn-outline-secondary{
+    /* position: absolute; */
+  }
+  a.nav-link.ocultar{
+    display: none;
+  }
+  .navbar-brand.ml-2.oculto{
+    display: none;
+  }
  }
 
+@media only screen and (min-width: 771px) {
+  .btn.btn-outline-secondary{
+    display: none;
+  }
+  a.nav-link i.fas.fa-envelope.prefix{
+    display: none;
+  }
+  .navbar-brand.ml-2.oculto{
+    display: none;
+  }
+}
 @media only screen and (min-width: 992px) {
   #carousel{
     margin-top: 4.5em;
   }
+.btn.btn-outline-secondary{
+  display: none;
+}
+a.nav-link i.fas.fa-envelope.prefix{
+  display: none;
+}
+.navbar-brand.ml-2.oculto{
+  display: none;
+}
  }
 
 
@@ -277,4 +336,14 @@ footer{
   #carousel{
     margin-top: 4.5em;
   }
+  .btn.btn-outline-secondary{
+    display: none;
+  }
+  a.nav-link i.fas.fa-envelope.prefix{
+    display: none;
+  }
+  .navbar-brand.ml-2.oculto{
+    display: none;
+  }
+
  }
