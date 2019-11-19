@@ -11,1165 +11,1113 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/7eb1ab4a84.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <!--Modal: Login / Register Form-->
-<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog cascading-modal" role="document">
-<!--Content-->
-<div class="modal-content">
+</head>
+<body>
 
-  <!--Modal cascading tabs-->
-  <div class="modal-c-tabs">
+  <!--Modal: Login / Register Form-->
+  <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
 
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
-          Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
-          Registrar</a>
-      </li>
-    </ul>
+      <!--Content-->
+      <div class="modal-content">
 
-    <!-- Tab panels -->
-    <div class="tab-content">
-      <!--Panel 7-->
-      <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
 
-        <!--Body-->
-        <div class="modal-body mb-1">
-          <div class="inputWidthIcon">
-            <i class="fas fa-envelope prefix"></i>
-            <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" placeholder="Ingresá tu email">
-          </div>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>Login</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>Registrar</a>
+            </li>
+          </ul>
 
-          <div class="inputWidthIcon">
-            <i class="fas fa-lock prefix"></i>
-            <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Password">
-          </div>
-          <div class="text-center mt-2">
-            <button class="btn btn-primary">Login <i class="fas fa-sign-in ml-1"></i></button>
-          </div>
-        </div>
-        <!--Footer-->
-        <div class="modal-footer">
-            <p>Todavía no te registrás? <a href="#" class="blue-text">Registrate</a></p>
-            <p>Olvidaste tu <a href="#" class="blue-text">Password?</a></p>
-        </div>
+          <!-- Tab panels -->
+          <div class="tab-content">
 
-      </div>
-      <!--/.Panel 7-->
+            <!--Panel 7-->
+            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
-      <!--Panel 8-->
-      <div class="tab-pane fade" id="panel8" role="tabpanel">
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="inputWidthIcon">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" placeholder="Ingresá tu email">
+                </div>
 
-        <!--Body-->
-        <div class="modal-body">
+                <div class="inputWidthIcon">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Password">
+                </div>
+                <div class="text-center mt-2">
+                  <button class="btn btn-primary">Login <i class="fas fa-sign-in ml-1"></i></button>
+                </div>
+              </div>
 
-          <div class="form-row">
-          <div class="col">
-            <div class="inputWidthIcon">
-              <input type="text" class="form-control" placeholder="Ingresa tu Nombre">
+              <!--Footer-->
+              <div class="modal-footer">
+                <p>Todavía no te registrás? <a href="#" class="blue-text">Registrate</a></p>
+                <p>Olvidaste tu <a href="#" class="blue-text">Password?</a></p>
+              </div>
+
             </div>
-          </div>
-          <div class="col">
-            <div class="inputWidthIcon">
-              <input type="text" class="form-control" placeholder="Ingresa tu apellido">
+
+            <!--Panel 8-->
+            <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body">
+                <div class="form-row">
+                  <div class="col">
+                    <div class="inputWidthIcon">
+                      <input type="text" class="form-control" placeholder="Ingresa tu Nombre">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="inputWidthIcon">
+                      <input type="text" class="form-control" placeholder="Ingresa tu apellido">
+                    </div>
+                  </div>
+                </div>
+                <div class="inputWidthIcon">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" placeholder="Ingresá tu email">
+                </div>
+
+                <div class="inputWidthIcon">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" placeholder="Password">
+                </div>
+
+                <div class="inputWidthIcon">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" placeholder="Repite la Password">
+                </div>
+
+                <div class="text-center form-sm mt-2">
+                  <button class="btn btn-primary">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                </div>
+              </div>
+
+              <!--Footer-->
+              <div class="modal-footer">
+                <p class="pt-1">Ya tenés cuenta? <a href="#" class="blue-text">Login</a></p>
+              </div>
             </div>
+          <!--/.Panel 8-->
           </div>
-        </div>
-          <div class="inputWidthIcon">
-            <i class="fas fa-envelope prefix"></i>
-            <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" placeholder="Ingresá tu email">
-          </div>
-
-          <div class="inputWidthIcon">
-            <i class="fas fa-lock prefix"></i>
-            <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" placeholder="Password">
-          </div>
-
-          <div class="inputWidthIcon">
-            <i class="fas fa-lock prefix"></i>
-            <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" placeholder="Repite la Password">
-          </div>
-
-          <div class="text-center form-sm mt-2">
-            <button class="btn btn-primary">Sign up <i class="fas fa-sign-in ml-1"></i></button>
-          </div>
-
-        </div>
-        <!--Footer-->
-        <div class="modal-footer">
-            <p class="pt-1">Ya tenés cuenta? <a href="#" class="blue-text">Login</a></p>
         </div>
       </div>
-      <!--/.Panel 8-->
+    <!--/.Content-->
     </div>
-
   </div>
-</div>
-<!--/.Content-->
-</div>
-</div>
-<!--Modal: Login / Register Form-->
+  <!--Modal: Login / Register Form-->
 
-<nav class="navbar fixed-top  justify-content-center navbar-expand-sm navbar-dark bg-dark">
-
-      <a name='home' class="navbar-brand ml-2" href="index.html"><font color='red'>D</font>H <font color='red'>S</font>port</a>
-      <form class="form-inline justify-content-center my-auto w-100">
-          <input class="form-control d-inline w-75 mr-sm-2" type="search" placeholder="Buscar: Reloj, Marca, Modelo, Color...">
-          <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
+  <nav class="navbar fixed-top  justify-content-center navbar-expand-sm navbar-dark bg-dark">
+    <a name='home' class="navbar-brand ml-2" href="index.html"><font color='red'>D</font>H <font color='red'>S</font>port</a>
+    <form class="form-inline justify-content-center my-auto w-100">
+      <input class="form-control d-inline w-75 mr-sm-2" type="search" placeholder="Buscar: Reloj, Marca, Modelo, Color...">
+      <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
       <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm"><i class="fas fa-user d-inline mr-2"></i>Login</a>
       <a class="nav-link" href="#">Contactanos</a>
       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-shopping-cart"></i></a>
-
   </nav>
+  <!-- NavBar Fin -->
 
-<!-- NavBar Fin -->
-    <!--Nombre CATEGORIA-->
-    <header>
-      <h1>RELOJES GPS+</h1>
-    </header>
-    <!--Seccion de Productos-->
+  <!--Nombre CATEGORIA-->
+  <header>
+    <h1>RELOJES GPS+</h1>
+  </header>
 
-    <section class="vip-products">
-      <!-- Producto 1 -->
-      <article class="product">
-        <div class="photo-container">
-          <img class="photo" src="img/img-products/approach-S60.webp" alt="garmin-golf">
-          <!-- Modal Info de Productos -->
-          <div class="botonModal">
-            <button type="button" class="btn btn-danger text-white btn-verMas" data-toggle="modal" data-target="#modalQuickView1">Ver más</button>
-  <div class="modal fade" id="modalQuickView1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-  <div class="modal-content">
-  <div class="modal-body">
-    <div class="row">
-      <div class="col-lg-5">
-        <!--Carousel Wrapper-->
-        <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
-          data-ride="carousel">
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <img class="d-block w-100"
-                src="img/img-products/approach-S60.webp"
-                alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100"
-                src="img/img-products/approach-S60 (1).webp"
-                alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100"
-                src="img/img-products/approach-S60 (2).webp"
-                alt="Third slide">
-            </div>
-          </div>
-          <!--/.Slides-->
-          <!--Controls-->
-          <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only text-danger">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-          <!--/.Controls-->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-thumb" data-slide-to="0" class="active">
-              <img src="img/img-products/approach-S60.webp" width="60">
-            </li>
-            <li data-target="#carousel-thumb" data-slide-to="1">
-              <img src="img/img-products/approach-S60 (1).webp" width="60">
-            </li>
-            <li data-target="#carousel-thumb" data-slide-to="2">
-              <img src="img/img-products/approach-S60 (2).webp" width="60">
-            </li>
-          </ol>
-        </div>
-        <!--/.Carousel Wrapper-->
-      </div>
-      <div class="col-lg-7">
-        <h2 class="h2-responsive product-name">
-          <strong class="none">GARMIN APPROACH</strong>
-        </h2>
-        <h4 class="h4-responsive">
-          <span class="green-text">
-            <strong>$4999.99</strong>
-          </span>
-          <span class="grey-text">
-            <small>
-              <s>$5000.00</s>
-            </small>
-          </span>
-        </h4>
+  <!--Seccion de Productos-->
+  <section class="vip-products">
 
-        <!--Accordion wrapper-->
-        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+  <!-- Producto 1 -->
+  <article class="product">
+    <div class="photo-container">
+      <img class="photo" src="img/img-products/approach-S60.webp" alt="garmin-golf">
 
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingOne1">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
-                aria-controls="collapseOne1">
-                <h5 class="mb-0">
-                Con estilo moderno <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-              data-parent="#accordionEx">
-              <div class="card-body font-weight-bolder">Se ve bien dentro y fuera del campo. El reloj de golf Approach® S60 le brinda la información crítica que necesita para su ronda, que se muestra en una gran pantalla táctil a color legible a la luz del sol de 1.2 pulgadas, para que pueda dominar su juego. Y con las prácticas bandas QuickFit ™, puedes cambiar tu estilo sin herramientas para que coincida con tu actividad, para que siempre estés a la moda.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingTwo2">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 class="mb-0">
-                  Sigue la pista. Manten el puntaje <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Con más sensores para mejorar la precisión de detección, el seguimiento de juegos AutoShot detecta automáticamente el desplazamiento a lo largo de la cancha y registra las distancias para el análisis posterior al juego en Garmin Connect ™.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingThree3">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
-                aria-expanded="false" aria-controls="collapseThree3">
-                <h5 class="mb-0">
-                  Conoce tu campo de juego <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                El Approach S60 viene precargado con mapas para más de 41.000 campos de golf en todo el mundo, y ofrece descargas automáticas de actualizaciones para aquellos donde juegas con más frecuencia cuando se sincroniza con Garmin Connect.<br>
-
-                Obtenga distancias precisas a cada ubicación en el campo, así como la distancia PlaysLike Distance, que ajusta las yardas para tener en cuenta los tiros cuesta arriba y cuesta abajo para que pueda seleccionar el mejor club para la situación. Y con Touch Targeting, puede tocar cualquier punto del mapa para obtener una medición precisa de ese punto exacto, incluyendo calles, trampas de arena, obstáculos de agua y más.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-        </div>
-        <!-- Accordion wrapper -->
-
-
-        <!-- Add to Cart -->
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6">
-
-              <select class="md-form mdb-select colorful-select dropdown-primary none">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">White</option>
-                <option value="2">Black</option>
-                <option value="3">Pink</option>
-              </select>
-              <label class="none">Select color</label>
-
-            </div>
-            <div class="col-md-6">
-
-              <select class="md-form mdb-select colorful-select dropdown-primary none">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">XS</option>
-                <option value="2">S</option>
-                <option value="3">L</option>
-              </select>
-              <label class="none">Select size</label>
-
-            </div>
-          </div>
-          <div class="text-center">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary">Add to cart
-              <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-        <!-- /.Add to Cart -->
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
-
-  <!-- Modal: modalQuickView -->
-</div>
-<!-- Modal Info de Productos FIN -->
-        </div>
-          <h2>GARMIN APPROACH® S60 - GOLF - 18 HOYOS</h2>
-          <p>$4999.99</p>
-
-      </article>
-      <!-- Producto 2 -->
-      <article class="product">
-        <div class="photo-container">
-          <img class="photo" src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp" alt="Garmin+35">
-          <img class="special" src="products/img-varios/anadir-al-carrito-de-compras-boton-e-commerce.png" alt="alCarrito">
-
-          <!-- Modal Info de Productos -->
-          <div class="botonModal">
-            <button type="button" class="btn btn-danger text-white btn-verMas" data-toggle="modal" data-target="#modalQuickView2">Ver más</button>
-          <div class="modal fade" id="modalQuickView2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
+      <!-- Modal Info de Productos -->
+      <div class="botonModal">
+        <button type="button" class="btn btn-danger text-white btn-verMas" data-toggle="modal" data-target="#modalQuickView1">Ver más</button>
+        <div class="modal fade" id="modalQuickView1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-          <div class="modal-body">
-          <div class="row">
-          <div class="col-lg-5">
-          <!--Carousel Wrapper-->
-          <div id="carousel-thumb2" class="carousel slide carousel-fade carousel-thumbnails"
-          data-ride="carousel">
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <img class="d-block w-100"
-                src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp"
-                alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100"
-                src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro (1).webp"
-                alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100"
-                src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro (2).webp"
-                alt="Third slide">
-            </div>
-          </div>
-          <!--/.Slides-->
-          <!--Controls-->
-          <a class="carousel-control-prev" href="#carousel-thumb2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only text-danger">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-thumb2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-          <!--/.Controls-->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-thumb2" data-slide-to="0" class="active">
-              <img src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp" width="60">
-            </li>
-            <li data-target="#carousel-thumb2" data-slide-to="1">
-              <img src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro (1).webp" width="60">
-            </li>
-            <li data-target="#carousel-thumb2" data-slide-to="2">
-              <img src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro (2).webp" width="60">
-            </li>
-          </ol>
-          </div>
-          <!--/.Carousel Wrapper-->
-          </div>
-          <div class="col-lg-7">
-          <h2 class="h2-responsive product-name">
-          <strong class="none">GARMIN APPROACH</strong>
-          </h2>
-          <h4 class="h4-responsive">
-          <span class="green-text">
-            <strong>$4999.99</strong>
-          </span>
-          <span class="grey-text">
-            <small>
-              <s>$5000.00</s>
-            </small>
-          </span>
-          </h4>
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
 
-          <!--Accordion wrapper-->
-          <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
 
-          <!-- Accordion card -->
-          <div class="card">
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="img/img-products/approach-S60.webp" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/img-products/approach-S60 (1).webp" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/img-products/approach-S60 (2).webp" alt="Third slide">
+                        </div>
+                      </div>
 
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingOne1">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne12" aria-expanded="true"
-                aria-controls="collapseOne1">
-                <h5 class="mb-0">
-                Con flow <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
+                      <!--/.Slides-->
+                      <!--Controls-->
+                      <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only text-danger">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
 
-            <!-- Card body -->
-            <div id="collapseOne12" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-              data-parent="#accordionEx">
-              <div class="card-body font-weight-bolder">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      <!--/.Controls-->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-thumb" data-slide-to="0" class="active">
+                          <img src="img/img-products/approach-S60.webp" width="60">
+                        </li>
+                        <li data-target="#carousel-thumb" data-slide-to="1">
+                          <img src="img/img-products/approach-S60 (1).webp" width="60">
+                        </li>
+                        <li data-target="#carousel-thumb" data-slide-to="2">
+                          <img src="img/img-products/approach-S60 (2).webp" width="60">
+                        </li>
+                      </ol>
+                    </div>
+
+                  <!--/.Carousel Wrapper-->
+                  </div>
+                  <div class="col-lg-7">
+                    <h2 class="h2-responsive product-name none">
+                      <strong>GARMIN APPROACH</strong>
+                    </h2>
+                    <h4 class="h4-responsive">
+                      <span class="green-text">
+                        <strong>$4999.99</strong>
+                      </span>
+                      <span class="grey-text">
+                        <small>
+                          <s>$5000.00</s>
+                        </small>
+                      </span>
+                    </h4>
+
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                      <!-- Accordion card -->
+                      <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne1">
+                          <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                            <h5 class="mb-0">CON ESTILO MODERNO <i class="fas fa-angle-down rotate-icon"></i></h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                          <div class="card-body">Se ve bien dentro y fuera del campo. El reloj de golf Approach® S60 le brinda la información crítica que necesita para su ronda, que se muestra en una gran pantalla táctil a color legible a la luz del sol de 1.2 pulgadas, para que pueda dominar su juego. Y con las prácticas bandas QuickFit ™, puedes cambiar tu estilo sin herramientas para que coincida con tu actividad, para que siempre estés a la moda.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion card -->
+
+                      <!-- Accordion card -->
+                      <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingTwo2">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                            <h5 class="mb-0">
+                              SIGUE LA PISTA. MANTEN EL PUNTAJE <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                          <div class="card-body">
+                            Con más sensores para mejorar la precisión de detección, el seguimiento de juegos AutoShot detecta automáticamente el desplazamiento a lo largo de la cancha y registra las distancias para el análisis posterior al juego en Garmin Connect ™.
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- Accordion card -->
+
+                      <!-- Accordion card -->
+                      <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingThree3">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                            <h5 class="mb-0">
+                              CONOCE TU CAMPO DE JUEGO <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx">
+                          <div class="card-body">
+                            El Approach S60 viene precargado con mapas para más de 41.000 campos de golf en todo el mundo, y ofrece descargas automáticas de actualizaciones para aquellos donde juegas con más frecuencia cuando se sincroniza con Garmin Connect.<br>
+
+                            Obtenga distancias precisas a cada ubicación en el campo, así como la distancia PlaysLike Distance, que ajusta las yardas para tener en cuenta los tiros cuesta arriba y cuesta abajo para que pueda seleccionar el mejor club para la situación. Y con Touch Targeting, puede tocar cualquier punto del mapa para obtener una medición precisa de ese punto exacto, incluyendo calles, trampas de arena, obstáculos de agua y más.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion card -->
+
+                    </div>
+                    <!-- Accordion wrapper -->
+
+                    <!-- Add to Cart -->
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+
+                          <!-- Select Color -->
+                          <select class="md-form mdb-select colorful-select dropdown-primary none">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">White</option>
+                            <option value="2">Black</option>
+                            <option value="3">Pink</option>
+                          </select>
+                          <label class="none">Select color</label>
+                        </div>
+
+                        <!-- Select Size -->
+                        <div class="col-md-6">
+                          <select class="md-form mdb-select colorful-select dropdown-primary none">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">L</option>
+                          </select>
+                          <label class="none">Select size</label>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Add to cart
+                          <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  <!-- /.Add to Cart -->
+                  </div>
+                </div>
               </div>
             </div>
-
-          </div>
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingTwo2">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo22"
-                aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 class="mb-0">
-                  Lorem <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseTwo22" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingThree3">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree32"
-                aria-expanded="false" aria-controls="collapseThree3">
-                <h5 class="mb-0">
-                  ipsum <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseThree32" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-          </div>
-          <!-- Accordion wrapper -->
-
-
-          <!-- Add to Cart -->
-          <div class="card-body">
-          <div class="row">
-            <div class="col-md-6">
-
-              <select class="md-form mdb-select colorful-select dropdown-primary none">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">White</option>
-                <option value="2">Black</option>
-                <option value="3">Pink</option>
-              </select>
-              <label class="none">Select color</label>
-
-            </div>
-            <div class="col-md-6">
-
-              <select class="md-form mdb-select colorful-select dropdown-primary none">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">XS</option>
-                <option value="2">S</option>
-                <option value="3">L</option>
-              </select>
-              <label class="none">Select size</label>
-
-            </div>
-          </div>
-          <div class="text-center">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary">Add to cart
-              <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
-            </button>
-          </div>
-          </div>
-          <!-- /.Add to Cart -->
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-
-          <!-- Modal: modalQuickView -->
-          </div>
-          <!-- Modal Info de Productos FIN -->
-        </div>
-        <h2>GARMIN FORERUNNER 35 RELOJ GPS PULSÓMETRO MUÑECA NEGRO</h2>
-        <p>$1.789</p>
-
-      </article>
-      <!-- Producto 3 -->
-      <article class="product">
-        <div class="photo-container">
-          <img class="photo" src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo.webp" alt="Garmin+Forerunner+235">
-          <img class="special" src="products/img-varios/anadir-al-carrito-de-compras-boton-e-commerce.png" alt="alCarrito">
-          <div class="botonModal">
-  <button type="button" class="btn btn-danger text-white btn-verMas" data-toggle="modal" data-target="#modalQuickView3">Ver más</button>
-  <div class="modal fade" id="modalQuickView3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-  <div class="modal-content">
-  <div class="modal-body">
-    <div class="row">
-      <div class="col-lg-5">
-        <!--Carousel Wrapper-->
-        <div id="carousel-thumb3" class="carousel slide carousel-fade carousel-thumbnails"
-          data-ride="carousel">
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <img class="d-block w-100"
-                src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo.webp"
-                alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100"
-                src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo (1).webp"
-                alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100"
-                src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo (2).webp"
-                alt="Third slide">
-            </div>
-          </div>
-          <!--/.Slides-->
-          <!--Controls-->
-          <a class="carousel-control-prev" href="#carousel-thumb3" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-thumb3" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-          <!--/.Controls-->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-thumb3" data-slide-to="0" class="active">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(23).jpg" width="60">
-            </li>
-            <li data-target="#carousel-thumb3" data-slide-to="1">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(24).jpg" width="60">
-            </li>
-            <li data-target="#carousel-thumb3" data-slide-to="2">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(25).jpg" width="60">
-            </li>
-          </ol>
-        </div>
-        <!--/.Carousel Wrapper-->
-      </div>
-      <div class="col-lg-7">
-        <h2 class="h2-responsive product-name none">
-          <strong>Product Name</strong>
-        </h2>
-        <h4 class="h4-responsive">
-          <span class="green-text">
-            <strong>$6999.99</strong>
-          </span>
-          <span class="grey-text">
-            <small>
-              <s>$7000.00</s>
-            </small>
-          </span>
-        </h4>
-
-        <!--Accordion wrapper-->
-        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingOne1">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne13" aria-expanded="true"
-                aria-controls="collapseOne1">
-                <h5 class="mb-0">
-                  Collapsible Group Item #1 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseOne13" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                squid. 3
-                wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingTwo2">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo23"
-                aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 class="mb-0">
-                  Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseTwo23" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                squid. 3
-                wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingThree3">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree33"
-                aria-expanded="false" aria-controls="collapseThree3">
-                <h5 class="mb-0">
-                  Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseThree33" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                squid. 3
-                wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-        </div>
-        <!-- Accordion wrapper -->
-
-
-        <!-- Add to Cart -->
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6">
-
-              <select class="md-form mdb-select colorful-select dropdown-primary none">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">White</option>
-                <option value="2">Black</option>
-                <option value="3">Pink</option>
-              </select>
-              <label class="none">Select color</label>
-
-            </div>
-            <div class="col-md-6">
-
-              <select class="md-form mdb-select colorful-select dropdown-primary none">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">XS</option>
-                <option value="2">S</option>
-                <option value="3">L</option>
-              </select>
-              <label class="none">Select size</label>
-
-            </div>
-          </div>
-          <div class="text-center">
-
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary">Add to cart
-              <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
-            </button>
           </div>
         </div>
-        <!-- /.Add to Cart -->
+
+      <!-- Modal: modalQuickView -->
       </div>
     </div>
-  </div>
-  </div>
-  </div>
-  </div>
+    <!-- Modal Info de Productos FIN -->
 
-  <!-- Modal: modalQuickView -->
-</div>
-        </div>
-        <h2>GARMIN FORERUNNER 235 HRM RELOJ GPS PULSÓMETRO MUÑECA</h2>
-        <p>$3.200</p>
+    <h2>GARMIN APPROACH® S60 - GOLF - 18 HOYOS</h2>
+    <p>$4999.99</p>
 
-      </article>
-      <!-- Producto 4 -->
-      <article class="product">
-        <div class="photo-container">
-          <img class="photo" src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp" alt="Polar+M430">
-          <img class="special" src="products/img-varios/anadir-al-carrito-de-compras-boton-e-commerce.png" alt="alCarrito">
-          <div class="botonModal">
-  <button type="button" class="btn btn-danger text-white btn-verMas" data-toggle="modal" data-target="#modalQuickView4">Ver más</button>
-  <div class="modal fade" id="modalQuickView4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-  <div class="modal-content">
-  <div class="modal-body">
-    <div class="row">
-      <div class="col-lg-5">
-        <!--Carousel Wrapper-->
-        <div id="carousel-thumb4" class="carousel slide carousel-fade carousel-thumbnails"
-          data-ride="carousel">
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <img class="d-block w-100"
-                src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp"
-                alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100"
-                src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro (1).webp"
-                alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100"
-                src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro (2).webp"
-                alt="Third slide">
+  </article>
+  <!-- Producto 1 Fin -->
+
+  <!-- Producto 2 -->
+  <article class="product">
+    <div class="photo-container">
+      <img class="photo" src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp" alt="Garmin+35">
+
+      <!-- Modal Info de Productos -->
+      <div class="botonModal">
+        <button type="button" class="btn btn-danger text-white btn-verMas" data-toggle="modal" data-target="#modalQuickView2">Ver más</button>
+        <div class="modal fade" id="modalQuickView2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
+
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb2" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro (1).webp" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro (2).webp" alt="Third slide">
+                        </div>
+                      </div>
+                      <!--/.Slides-->
+
+                      <!--Controls-->
+                      <a class="carousel-control-prev" href="#carousel-thumb2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only text-danger">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel-thumb2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+
+                      <!--/.Controls-->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-thumb2" data-slide-to="0" class="active">
+                          <img src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp" width="60">
+                        </li>
+                        <li data-target="#carousel-thumb2" data-slide-to="1">
+                          <img src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro (1).webp" width="60">
+                        </li>
+                        <li data-target="#carousel-thumb2" data-slide-to="2">
+                          <img src="img/img-products/Garmin+Forerunner+35+Reloj+GPS+Puls+metro+Mu+eca+Negro (2).webp" width="60">
+                        </li>
+                      </ol>
+                      </div>
+
+                    <!--/.Carousel Wrapper-->
+                    </div>
+                    <div class="col-lg-7">
+                      <h2 class="h2-responsive product-name none">
+                        <strong>GARMIN FORERUNNER 35</strong>
+                      </h2>
+                      <h4 class="h4-responsive">
+                        <span class="green-text">
+                          <strong>$1789.00</strong>
+                        </span>
+                        <span class="grey-text">
+                          <small>
+                            <s>$4000.00</s>
+                          </small>
+                        </span>
+                      </h4>
+
+                      <!--Accordion wrapper-->
+                      <div class="accordion md-accordion" id="accordionEx2" role="tablist" aria-multiselectable="true">
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="headingOne12">
+                            <a data-toggle="collapse" data-parent="#accordionEx2" href="#collapseOne12" aria-expanded="true" aria-controls="collapseOne12">
+                              <h5 class="mb-0">
+                              SIEMPRE CONECTADO <i class="fas fa-angle-down rotate-icon"></i>
+                              </h5>
+                            </a>
+                          </div>
+
+                          <!-- Card body -->
+                          <div id="collapseOne12" class="collapse show" role="tabpanel" aria-labelledby="headingOne12" data-parent="#accordionEx2">
+                            <div class="card-body">
+                              Cuando está vinculado con un smartphone compatible, el Forerunner 35 ofrece las notificaciones inteligentes y otras funciones conectadas. Mantente conectado mientras corres. Conectado a tus familiares y amigos con la función LiveTrack, que les permitirá seguir tus carreras en tiempo real. El Forerunner 35 también actualiza el software automáticamente para que estés siempre a la última, y además podrás controlar la música de tu dispositivo, entre otras cosas.
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="headingTwo2">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapseTwo22" aria-expanded="false" aria-controls="collapseTwo22">
+                              <h5 class="mb-0">
+                                CORRE SIN PREOCUPARTE <i class="fas fa-angle-down rotate-icon"></i>
+                              </h5>
+                            </a>
+                          </div>
+
+                          <!-- Card body -->
+                          <div id="collapseTwo22" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx2">
+                            <div class="card-body">
+                              El Forerunner 35 es delgado y ligero.Perfecto para correr a diario, entrenar y competir. Cuenta con la tecnología Garmin Elevate para medir tu frecuencia cardíaca desde tu muñeca. Con su preciso GPS, podrás controlar la distancia recorrida, tu ritmo, los intervalos y mucho más. Además, puesto que todas estas estadísticas se capturan a través del propio reloj, no necesitas nada más: ni teléfono ni accesorios extras. ¡Solo tienes que ponerte el Forerunner 35 y empezar a correr!
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="headingThree32">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapseThree32" aria-expanded="false" aria-controls="collapseThree32">
+                              <h5 class="mb-0">
+                                INFORMACIÓN TÉCNICA <i class="fas fa-angle-down rotate-icon"></i>
+                              </h5>
+                            </a>
+                          </div>
+
+                          <!-- Card body -->
+                          <div id="collapseThree32" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx2">
+                            <div class="card-body">
+                              MEDICIÓN DE PARÁMETROS:
+                              <br>
+                              GPS, ritmo, distancia, pulsómetro en la muñeca, actividad diaria, sueño,calorías
+                              <br><br>
+                              AUTONOMÍA:
+                              <br>
+                              En modo GPS: 13 horas En modo Reloj (pulsómetro y bluetooth activados): 9 días
+                              <br><br>
+                              ESTANQUEIDAD:
+                              <br>
+                              Hasta 50 metros.
+                              <br><br>
+                              LIGEREZA:
+                              <br>
+                              37 gramos
+                              <br><br>
+                              CONECTIVIDAD:
+                              <br>
+                              Transferencia a Garmin Connect Mobile con tecnología B.L.E.
+                              <br><br>
+                              COMPATIBILIDAD:
+                              <br>
+                              Compatible con Garmin Connect™, sincronización automática
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Accordion card -->
+
+                      </div>
+                      <!-- Accordion wrapper -->
+
+                    <!-- Add to Cart -->
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+
+                          <!-- Select color -->
+                          <select class="md-form mdb-select colorful-select dropdown-primary none">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">White</option>
+                            <option value="2">Black</option>
+                            <option value="3">Pink</option>
+                          </select>
+                          <label class="none">Select color</label>
+                        </div>
+                        <div class="col-md-6">
+
+                          <!-- Select size -->
+                          <select class="md-form mdb-select colorful-select dropdown-primary none">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">L</option>
+                          </select>
+                          <label class="none">Select size</label>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Add to cart
+                          <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  <!-- /.Add to Cart -->
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!--/.Slides-->
-          <!--Controls-->
-          <a class="carousel-control-prev" href="#carousel-thumb4" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-thumb4" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-          <!--/.Controls-->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-thumb4" data-slide-to="0" class="active">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(23).jpg" width="60">
-            </li>
-            <li data-target="#carousel-thumb4" data-slide-to="1">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(24).jpg" width="60">
-            </li>
-            <li data-target="#carousel-thumb4" data-slide-to="2">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(25).jpg" width="60">
-            </li>
-          </ol>
         </div>
-        <!--/.Carousel Wrapper-->
+
+      <!-- Modal: modalQuickView -->
       </div>
-      <div class="col-lg-7">
-        <h2 class="h2-responsive product-name none">
-          <strong>Product Name</strong>
-        </h2>
-        <h4 class="h4-responsive">
-          <span class="green-text">
-            <strong>$49</strong>
-          </span>
-          <span class="grey-text">
-            <small>
-              <s>$89</s>
-            </small>
-          </span>
-        </h4>
 
-        <!--Accordion wrapper-->
-        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+    <!-- Modal Info de Productos FIN -->
+    </div>
+    <h2>GARMIN FORERUNNER 35 RELOJ GPS PULSÓMETRO MUÑECA NEGRO</h2>
+    <p>$1.789</p>
+  </article>
 
-          <!-- Accordion card -->
-          <div class="card">
+  <!-- Producto 3 -->
+  <article class="product">
+    <div class="photo-container">
+      <img class="photo" src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo.webp" alt="Garmin+Forerunner+235">
 
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingOne1">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
-                aria-controls="collapseOne1">
-                <h5 class="mb-0">
-                  Collapsible Group Item #1 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
+      <!-- Modal de Productos -->
+      <div class="botonModal">
+        <button type="button" class="btn btn-danger text-white btn-verMas" data-toggle="modal" data-target="#modalQuickView3">Ver más</button>
+        <div class="modal fade" id="modalQuickView3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
 
-            <!-- Card body -->
-            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                squid. 3
-                wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb3" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo.webp" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo (1).webp" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo (2).webp" alt="Third slide">
+                        </div>
+                      </div>
+                      <!--/.Slides-->
+
+                      <!--Controls-->
+                      <a class="carousel-control-prev" href="#carousel-thumb3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel-thumb3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+
+                      <!--/.Controls-->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-thumb3" data-slide-to="0" class="active">
+                          <img src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo.webp" width="60">
+                        </li>
+                        <li data-target="#carousel-thumb3" data-slide-to="1">
+                          <img src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo (1).webp" width="60">
+                        </li>
+                        <li data-target="#carousel-thumb3" data-slide-to="2">
+                          <img src="img/img-products/Garmin+Forerunner+235+HRM+Reloj+GPS+Puls+metro+Mu+eca+Negro+Rojo (2).webp" width="60">
+                        </li>
+                      </ol>
+                    </div>
+
+                  <!--/.Carousel Wrapper-->
+                  </div>
+                  <div class="col-lg-7">
+                    <h2 class="h2-responsive product-name none">
+                      <strong>GARMIN FORERUNNER 235</strong>
+                    </h2>
+                    <h4 class="h4-responsive">
+                      <span class="green-text">
+                        <strong>$3200.00</strong>
+                      </span>
+                      <span class="grey-text">
+                        <small>
+                          <s>$7000.00</s>
+                        </small>
+                      </span>
+                    </h4>
+
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion" id="accordionEx3" role="tablist" aria-multiselectable="true">
+
+                      <!-- Accordion card -->
+                      <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne13">
+                          <a data-toggle="collapse" data-parent="#accordionEx3" href="#collapseOne13" aria-expanded="true" aria-controls="collapseOne13">
+                            <h5 class="mb-0">
+                              FRECUENCIA CARDÍACA EN LA MUÑECA <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseOne13" class="collapse show" role="tabpanel" aria-labelledby="headingOne13" data-parent="#accordionEx3">
+                          <div class="card-body">
+                            El Forerunner 235 utiliza un sensor óptimo que mide la frecuencia cardíaca en la muñeca todo el día, para que puedas correr sin llevar un monitor pectoral. Las indicaciones de color identifican la zona de frecuencia cardíaca y los latidos por minuto en tiempo real.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion card -->
+
+                      <!-- Accordion card -->
+                      <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingTwo23">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapseTwo23" aria-expanded="false" aria-controls="collapseTwo23">
+                            <h5 class="mb-0">
+                              PERSONALIZA TU RELOJ Y TU ENTRENAMIENTO <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseTwo23" class="collapse" role="tabpanel" aria-labelledby="headingTwo23" data-parent="#accordionEx3">
+                          <div class="card-body">
+                            Del mismo modo que no hay dos corredores iguales, tampoco hay dos objetivos iguales. Para que puedas prepararte para alcanzar tu objetivo, envía las sesiones y los planes de entrenamiento por adelantado a tu reloj en Garmin Connect. También puedes personalizar campos de datos, descargar esferas de reloj, widgets y aplicaciones, todo gratis en Connect IQ
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion card -->
+
+                      <!-- Accordion card -->
+                      <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingThree33">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapseThree33" aria-expanded="false" aria-controls="collapseThree33">
+                            <h5 class="mb-0">
+                              FUNCIONES PARA EL RUNNING <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree33" class="collapse" role="tabpanel" aria-labelledby="headingThree33" data-parent="#accordionEx3">
+                          <div class="card-body">
+                            - Estimación del VO2 máximo
+                            <br><br>
+                            - Ayuda a la recuperación
+                            <br><br>
+                            - Pronóstico de carrera
+                            <br><br>
+                            - Acelerómetro (calcula distancias de entrenamientos en interiores, sin necesidad de podómetro)
+                            <br><br>
+                            - Récords personales.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion card -->
+
+                    </div>
+                    <!-- Accordion wrapper -->
+
+                    <!-- Add to Cart -->
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+
+                          <!-- Select color -->
+                          <select class="md-form mdb-select colorful-select dropdown-primary none">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">White</option>
+                            <option value="2">Black</option>
+                            <option value="3">Pink</option>
+                          </select>
+                          <label class="none">Select color</label>
+                        </div>
+                        <div class="col-md-6">
+
+                          <!-- Select size -->
+                          <select class="md-form mdb-select colorful-select dropdown-primary none">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">L</option>
+                          </select>
+                          <label class="none">Select size</label>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Add to cart
+                          <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  <!-- /.Add to Cart -->
+                  </div>
+                </div>
               </div>
             </div>
-
           </div>
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingTwo2">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 class="mb-0">
-                  Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                squid. 3
-                wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingThree3">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
-                aria-expanded="false" aria-controls="collapseThree3">
-                <h5 class="mb-0">
-                  Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                squid. 3
-                wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
         </div>
-        <!-- Accordion wrapper -->
 
-
-        <!-- Add to Cart -->
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6">
-
-              <select class="md-form mdb-select colorful-select dropdown-primary none">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">White</option>
-                <option value="2">Black</option>
-                <option value="3">Pink</option>
-              </select>
-              <label class="none">Select color</label>
-
-            </div>
-            <div class="col-md-6">
-
-              <select class="md-form mdb-select colorful-select dropdown-primary none">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">XS</option>
-                <option value="2">S</option>
-                <option value="3">L</option>
-              </select>
-              <label class="none">Select size</label>
-
-            </div>
-          </div>
-          <div class="text-center">
-
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary">Add to cart
-              <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-        <!-- /.Add to Cart -->
+      <!-- Modal: modalQuickView -->
       </div>
     </div>
-  </div>
-  </div>
-  </div>
-  </div>
+    <h2>GARMIN FORERUNNER 235 HRM RELOJ GPS PULSÓMETRO MUÑECA</h2>
+    <p>$3.200</p>
+  </article>
 
-  <!-- Modal: modalQuickView -->
-</div>
-        </div>
-        <h2>RELOJ GPS POLAR M430 PULSÓMETRO EN MUÑECA NEGRO</h2>
-        <p>$2.500</p>
+  <!-- Producto 4 -->
+  <article class="product">
+    <div class="photo-container">
+      <img class="photo" src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp" alt="Polar+M430">
+      <div class="botonModal">
+        <button type="button" class="btn btn-danger text-white btn-verMas" data-toggle="modal" data-target="#modalQuickView4">Ver más</button>
+        <div class="modal fade" id="modalQuickView4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
 
-      </article>
-      <!-- Producto 5 -->
-      <article class="product">
-        <div class="photo-container">
-          <img class="photo" src="img/img-products/Suunto+Spartan+Trainer+Reloj+GPS+Ambar.webp" alt="Suunto+Spartan">
-          <div class="botonModal">
-  <button type="button" class="btn btn-danger text-white btn-verMas" data-toggle="modal" data-target="#modalQuickView5">Ver más</button>
-  <div class="modal fade" id="modalQuickView5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-  <div class="modal-content">
-  <div class="modal-body">
-    <div class="row">
-      <div class="col-lg-5">
-        <!--Carousel Wrapper-->
-        <div id="carousel-thumb5" class="carousel slide carousel-fade carousel-thumbnails"
-          data-ride="carousel">
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <img class="d-block w-100"
-                src="img/img-products/Suunto+Spartan+Trainer+Reloj+GPS+Ambar.webp"
-                alt="First slide">
-            </div>
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb4" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
 
-          </div>
-          <!--/.Slides-->
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro (1).webp" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro (2).webp" alt="Third slide">
+                        </div>
+                      </div>
+                      <!--/.Slides-->
 
-          <ol class="carousel-indicators none">
-            <li data-target="#carousel-thumb" data-slide-to="0" class="active">
-              <img src="img/img-products/Suunto+Spartan+Trainer+Reloj+GPS+Ambar.webp" width="60">
-            </li>
+                      <!--Controls-->
+                      <a class="carousel-control-prev" href="#carousel-thumb4" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel-thumb4" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                      <!--/.Controls-->
 
-          </ol>
-        </div>
-        <!--/.Carousel Wrapper-->
-      </div>
-      <div class="col-lg-7">
-        <h2 class="h2-responsive product-name none">
-          <strong>Product Name</strong>
-        </h2>
-        <h4 class="h4-responsive">
-          <span class="green-text">
-            <strong>$49</strong>
-          </span>
-          <span class="grey-text">
-            <small>
-              <s>$89</s>
-            </small>
-          </span>
-        </h4>
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-thumb4" data-slide-to="0" class="active">
+                          <img src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro.webp" width="60">
+                        </li>
+                        <li data-target="#carousel-thumb4" data-slide-to="1">
+                          <img src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro (1).webp" width="60">
+                        </li>
+                        <li data-target="#carousel-thumb4" data-slide-to="2">
+                          <img src="img/img-products/Polar+M430+Reloj+GPS+Puls+metro+Mu+eca+Negro (2).webp" width="60">
+                        </li>
+                      </ol>
+                    </div>
+                    <!--/.Carousel Wrapper-->
 
-        <!--Accordion wrapper-->
-        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                  </div>
+                  <div class="col-lg-7">
+                    <h2 class="h2-responsive product-name none">
+                      <strong>POLAR M430</strong>
+                    </h2>
+                    <h4 class="h4-responsive">
+                      <span class="green-text">
+                        <strong>$2500.00</strong>
+                      </span>
+                      <span class="grey-text">
+                        <small>
+                          <s>$5000.00</s>
+                        </small>
+                      </span>
+                    </h4>
 
-          <!-- Accordion card -->
-          <div class="card">
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion" id="accordionEx4" role="tablist" aria-multiselectable="true">
 
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingOne1">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
-                aria-controls="collapseOne1">
-                <h5 class="mb-0">
-                  Collapsible Group Item #1 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
+                      <!-- Accordion card -->
+                      <div class="card">
 
-            <!-- Card body -->
-            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                squid. 3
-                wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne14">
+                          <a data-toggle="collapse" data-parent="#accordionEx4" href="#collapseOne14" aria-expanded="true" aria-controls="collapseOne14">
+                            <h5 class="mb-0">
+                              GPS AVANZADO <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseOne14" class="collapse show" role="tabpanel" aria-labelledby="headingOne14" data-parent="#accordionEx4">
+                          <div class="card-body">
+                            El GPS del Polar M430 mide tu velocidad, distancia y ruta con precisión. Gracias al modo de ahorro de energía del GPS, controla cada giro, incluso en tus aventuras más largas.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion card -->
+
+                      <!-- Accordion card -->
+                      <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingTwo24">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4" href="#collapseTwo24" aria-expanded="false" aria-controls="collapseTwo24">
+                            <h5 class="mb-0">
+                              POLAR FLOW <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseTwo24" class="collapse" role="tabpanel" aria-labelledby="headingTwo24" data-parent="#accordionEx4">
+                          <div class="card-body">
+                            Planifica, sincroniza y comparte tu entrenamiento con el exclusivo servicio en línea y la aplicación Polar Flow. Todos los datos se pueden consultar con facilidad.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion card -->
+
+                      <!-- Accordion card -->
+                      <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingThree34">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4" href="#collapseThree34" aria-expanded="false" aria-controls="collapseThree34">
+                            <h5 class="mb-0">
+                              INFORMACIÓN TÉCNICA <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree34" class="collapse" role="tabpanel" aria-labelledby="headingThree34" data-parent="#accordionEx4">
+                          <div class="card-body">
+                            - GPS integrado con tecnología de predicción por satélite SiRFInstantFix™
+                            <br><br>
+                            - Sensor de actividad
+                            <br><br>
+                            - Laps manuales y automáticos
+                            <br><br>
+                            - Alerta de vibración
+                            <br><br>
+                            - Resistente al agua (adecuado para nadar)
+                            <br><br>
+                            - Memoria Flash de 8 Mb
+                            <br><br>
+                            - Batería recargable de polímero de litio de 240 mAh
+                            <br><br>
+                            - Duración de la batería de hasta 8 horas de entrenamiento con GPS y sensor óptico de frecuencia cardíaca.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion card -->
+
+                    </div>
+                    <!-- Accordion wrapper -->
+
+                    <!-- Add to Cart -->
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+
+                          <!-- Select color -->
+                          <select class="md-form mdb-select colorful-select dropdown-primary none">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">White</option>
+                            <option value="2">Black</option>
+                            <option value="3">Pink</option>
+                          </select>
+                          <label class="none">Select color</label>
+                        </div>
+                        <div class="col-md-6">
+
+                          <!-- Select size -->
+                          <select class="md-form mdb-select colorful-select dropdown-primary none">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">L</option>
+                          </select>
+                          <label class="none">Select size</label>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Add to cart
+                          <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!-- /.Add to Cart -->
+                  </div>
+                </div>
               </div>
             </div>
-
-          </div>
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingTwo2">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 class="mb-0">
-                  Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                squid. 3
-                wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingThree3">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
-                aria-expanded="false" aria-controls="collapseThree3">
-                <h5 class="mb-0">
-                  Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
-              data-parent="#accordionEx">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                squid. 3
-                wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              </div>
-            </div>
-
-          </div>
-          <!-- Accordion card -->
-
-        </div>
-        <!-- Accordion wrapper -->
-
-
-        <!-- Add to Cart -->
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6">
-
-              <select class="md-form mdb-select colorful-select dropdown-primary none">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">White</option>
-                <option value="2">Black</option>
-                <option value="3">Pink</option>
-              </select>
-              <label class="none">Select color</label>
-
-            </div>
-            <div class="col-md-6">
-
-              <select class="md-form mdb-select colorful-select dropdown-primary none">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">XS</option>
-                <option value="2">S</option>
-                <option value="3">L</option>
-              </select>
-              <label class="none">Select size</label>
-
-            </div>
-          </div>
-          <div class="text-center">
-
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary">Add to cart
-              <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
-            </button>
           </div>
         </div>
-        <!-- /.Add to Cart -->
+
+      <!-- Modal: modalQuickView -->
       </div>
     </div>
-  </div>
-  </div>
-  </div>
-  </div>
+  <h2>RELOJ GPS POLAR M430 PULSÓMETRO EN MUÑECA NEGRO</h2>
+  <p>$2.500</p>
+  </article>
 
-  <!-- Modal: modalQuickView -->
-</div>
+  <!-- Producto 5 -->
+  <article class="product">
+    <div class="photo-container">
+      <img class="photo" src="img/img-products/Suunto+Spartan+Trainer+Reloj+GPS+Ambar.webp" alt="Suunto+Spartan">
+      <div class="botonModal">
+        <button type="button" class="btn btn-danger text-white btn-verMas" data-toggle="modal" data-target="#modalQuickView5">Ver más</button>
+        <div class="modal fade" id="modalQuickView5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
+
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb5" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="img/img-products/Suunto+Spartan+Trainer+Reloj+GPS+Ambar.webp" alt="First slide">
+                        </div>
+                      </div>
+                      <!--/.Slides-->
+
+                      <ol class="carousel-indicators none">
+                        <li data-target="#carousel-thumb" data-slide-to="0" class="active">
+                          <img src="img/img-products/Suunto+Spartan+Trainer+Reloj+GPS+Ambar.webp" width="60">
+                        </li>
+                      </ol>
+                    </div>
+                    <!--/.Carousel Wrapper-->
+
+                  </div>
+                  <div class="col-lg-7">
+                    <h2 class="h2-responsive product-name none">
+                      <strong>SUUNTO SPARTAN</strong>
+                    </h2>
+                    <h4 class="h4-responsive">
+                      <span class="green-text">
+                        <strong>$1800.00</strong>
+                      </span>
+                      <span class="grey-text">
+                        <small>
+                          <s>$1950.00</s>
+                        </small>
+                      </span>
+                    </h4>
+
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion" id="accordionEx5" role="tablist" aria-multiselectable="true">
+
+                      <!-- Accordion card -->
+                      <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne15">
+                          <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapseOne15" aria-expanded="true" aria-controls="collapseOne15">
+                            <h5 class="mb-0">
+                              VENTAJAS DEL PRODUCTO <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseOne15" class="collapse show" role="tabpanel" aria-labelledby="headingOne15" data-parent="#accordionEx5">
+                          <div class="card-body">
+                            Función GPS, compatible con iOS y Android, carga mediante USB
+                            <br><br>
+                            Comoda frecuencia cardiaca desde la muñeca en un formato compacto
+                            <br><br>
+                            Ajustable
+                            <br><br>
+                            Mas de 80 modos de deporte
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion card -->
+
+                      <!-- Accordion card -->
+                      <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingTwo25">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx5" href="#collapseTwo25" aria-expanded="false" aria-controls="collapseTwo25">
+                            <h5 class="mb-0">
+                              INFORMACIÓN TÉCNICA <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseTwo25" class="collapse" role="tabpanel" aria-labelledby="headingTwo25" data-parent="#accordionEx5">
+                          <div class="card-body">
+                            - Autonomía de 7 a 14 días
+                            <br><br>
+                            - Conectividad entre dispositivos y Strava
+                            <br><br>
+                            - Cálculo distancia, pasos, altitud y metereologia
+                            <br><br>
+                            - Garantía de 2 años
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion card -->
+
+                    </div>
+                    <!-- Accordion wrapper -->
+
+                    <!-- Add to Cart -->
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+
+                          <!-- Select color -->
+                          <select class="md-form mdb-select colorful-select dropdown-primary none">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">White</option>
+                            <option value="2">Black</option>
+                            <option value="3">Pink</option>
+                          </select>
+                          <label class="none">Select color</label>
+                        </div>
+                        <div class="col-md-6">
+
+                          <!-- Select size -->
+                          <select class="md-form mdb-select colorful-select dropdown-primary none">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">L</option>
+                          </select>
+                          <label class="none">Select size</label>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Add to cart
+                          <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!-- /.Add to Cart -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <h2>SUUNTO SPARTAN TRAINER RELOJ GPS AMBAR</h2>
-        <p>$1.800</p>
+        <!-- Modal: modalQuickView -->
 
-      </article>
-    </section>
-    <!-- Seccion de Productos FIN -->
-
-    <!-- Subir -->
-    <div id='subir'>
-      <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+      </div>
     </div>
+    <h2>SUUNTO SPARTAN TRAINER RELOJ GPS AMBAR</h2>
+    <p>$1.800</p>
+  </article>
+</section>
+<!-- Seccion de Productos FIN -->
+
+
+  <!-- Subir -->
+  <div id='subir'>
+    <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+  </div>
   <!-- Subir Fin -->
-    <div class="none">Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+
+  <!-- Flaticon -->
+  <div class="none">Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
 
   <!-- javascript -->
   <script type="text/javascript" src="js/products.js"></script>
-    <!-- Bootstrap -->
+
+  <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
