@@ -1,108 +1,340 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#161616">
-  <meta name="theme-color" content="#161616">
-  <script>document.getElementsByTagName("html")[0].className += " js";</script>
-  <link rel="stylesheet" href="css/style.css">
-  <title>DH SPORTS</title>
-</head>
-<body>
-<header class="cd-header flex flex-column flex-center">
-  <div class="text-component text-center">
-    <h1>FAQS</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#161616">
+    <meta name="theme-color" content="#161616">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7eb1ab4a84.js" crossorigin="anonymous"></script>
+  </head>
+  <title>DH Sport</title>
+  <body>
+
+  <!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+  <!--Content-->
+  <div class="modal-content">
+
+    <!--Modal cascading tabs-->
+    <div class="modal-c-tabs">
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+            Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+            Registrar</a>
+        </li>
+      </ul>
+
+      <!-- Tab panels -->
+      <div class="tab-content">
+        <!--Panel 7-->
+        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+          <!--Body-->
+          <div class="modal-body mb-1">
+            <div class="inputWidthIcon">
+              <i class="fas fa-envelope prefix"></i>
+              <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" placeholder="Ingresá tu email">
+            </div>
+
+            <div class="inputWidthIcon">
+              <i class="fas fa-lock prefix"></i>
+              <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Password">
+            </div>
+            <div class="text-center mt-2">
+              <button class="btn btn-danger">Login <i class="fas fa-sign-in ml-1"></i></button>
+            </div>
+          </div>
+          <!--Footer-->
+          <div class="modal-footer">
+              <p>Todavía no te registrás? <a href="#" class="blue-text">Registrate</a></p>
+              <p>Olvidaste tu <a href="#" class="blue-text">Password?</a></p>
+          </div>
+
+        </div>
+        <!--/.Panel 7-->
+
+        <!--Panel 8-->
+        <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+          <!--Body-->
+          <div class="modal-body">
+
+            <div class="form-row">
+            <div class="col">
+              <div class="inputWidthIcon">
+                <input type="text" class="form-control" placeholder="Ingresa tu Nombre">
+              </div>
+            </div>
+            <div class="col">
+              <div class="inputWidthIcon">
+                <input type="text" class="form-control" placeholder="Ingresa tu apellido">
+              </div>
+            </div>
+          </div>
+            <div class="inputWidthIcon">
+              <i class="fas fa-envelope prefix"></i>
+              <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" placeholder="Ingresá tu email">
+            </div>
+
+            <div class="inputWidthIcon">
+              <i class="fas fa-lock prefix"></i>
+              <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" placeholder="Password">
+            </div>
+
+            <div class="inputWidthIcon">
+              <i class="fas fa-lock prefix"></i>
+              <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" placeholder="Repite la Password">
+            </div>
+
+            <div class="text-center form-sm mt-2">
+              <button class="btn btn-danger">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+            </div>
+
+          </div>
+          <!--Footer-->
+          <div class="modal-footer">
+              <p class="pt-1">Ya tenés cuenta? <a href="#" class="blue-text">Login</a></p>
+          </div>
+        </div>
+        <!--/.Panel 8-->
+      </div>
+
+    </div>
+  </div>
+  <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+<!-- Modal: modalCart -->
+<div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Tu compra</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Remover</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Producto 1</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Producto 2</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Producto 3</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Producto 4</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr class="total">
+              <th scope="row">5</th>
+              <td>Total</td>
+              <td>$ 400</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cerrar</button>
+        <button class="btn btn-danger">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: modalCart -->
+
+  <nav class="navbar fixed-top  justify-content-center navbar-expand-sm navbar-dark bg-dark">
+
+        <a name='home' class="navbar-brand ml-2" href="#"><font color='red'>D</font>H <font color='red'>S</font>port</a>
+        <a name='home' class="navbar-brand ml-2 oculto" href="#"><font color='red'>D</font>H<font color='red'>S</font></a>
+
+        <form class="form-inline justify-content-center my-auto w-100">
+            <input class="form-control d-inline w-75 mr-sm-2" type="search" placeholder="Buscar: Reloj, Marca, Modelo, Color...">
+            <button class="btn btn-outline-secondary" type="submit">
+            <i class="fas fa-search"></i></button>
+            <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm"><i class="fas fa-user d-inline mr-2"></i>Login</a>
+        <a class="nav-link" href="#"><i class="fas fa-envelope prefix"></i></a>
+        <a class="nav-link ocultar" href="#">Contactanos</a>
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#modalCart"><i class="fas fa-shopping-cart"></i></a>
+
+    </nav>
+
+  <!-- NavBar Fin -->
+<!-- FAQS -->
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="ml-2">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          
+        </button>
+      </h5>
+    </div>
+
+    <!--<div id="collapseOne" class="collapsing" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>-->
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="ml-2">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Compras
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Para poder comprar cualquier producto que desees, solo debes estar registrado, si no tienes una cuenta puedes crearla "aqui". Es muy sencillo y solo tomará 5 minutos.
+        Una vez seleccionado el producto, se incluira el producto en tu carrito de compras, en donde podrás agregar o quitar más productos antes de finalizar tu compra y abonar mediante Efectivo o Tarjetas de Crédito / Débito.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="ml-2">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Devoluciones
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        No te preocupes. En caso de que el producto que llegó a tu domicilio, no es el que esperabas, nos avisás y lo pasamos a buscar por tu casa sin cargo alguno y te devolvemos el dinero.
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="ml-2">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Formas de Pago
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+        Podés adquirir cualquiera de nuestros productos, abonando con tarjeta de crédito o débito, y aproechando las promociones de cada caso.
+        Al seleccionar cualquiera de nuestros prodcutos, eligiendo forma de pago Efectivo, se creara un código de barras el cual podrás abonar directamente en cualquier sucursal de Rapipágo o Pagofácil de tu ciudad.
+      </div>
+    </div>
+  </div>
+<!-- END FAQS-->
+<!-- Contactanos -->
+<div class="container-fluid contact-form">
+  <div class="contact-image">
 
   </div>
-</header>
+  <form method="post">
+      <h3>Dejanos un Mensaje</h3>
+     <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="text" name="nombre" class="form-control" placeholder="Nombre *" value="" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="email" class="form-control" placeholder="Email *" value="" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="telefono" class="form-control" placeholder="Telefono *" value="" />
+            </div>
+            <div class="form-group">
+                <input type="submit" name="enviar" class="btnContact" value="Enviar Mensaje" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <textarea name="txtMsg" class="form-control" placeholder="Mensajee *" style="width: 100%; height: 150px;"></textarea>
+            </div>
+        </div>
+      </div>
+  </form>
 
-<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
-	<ul class="cd-faq__categories">
-		<li><a class="cd-faq__category cd-faq__category-selected truncate" href="#buys">Compras</a></li>
-		<li><a class="cd-faq__category truncate" href="#devolution">Devoluciones</a></li>
-		<li><a class="cd-faq__category truncate" href="#payment">Formas de pago</a></li>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.268784389716!2d-68.86304268481504!3d-32.89106108093777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09a990344147%3A0x9b0ccbff726f65da!2sAv.%20Ar%C3%ADstides%20Villanueva%20711%2C%20M5500%20Mendoza!5e0!3m2!1ses!2sar!4v1573754205298!5m2!1ses!2sar" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  <!-- Contactanos Fin -->
 
-	</ul> <!-- cd-faq__categories -->
+  <!-- Footer -->
+<footer class="container-fluid">
+  <div class="row">
+    <div class="col-12 parrafo">
+      <p><a href="faqs.html">Preguntas</a></p>
+      <p><a href="#">Contacto</a></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 sociales">
+      <a href=""><i class="fab fa-facebook-square"></i></a>
+      <a href=""><i class="fab fa-instagram"></i></a>
+      <a href=""><i class="fab fa-twitter-square"></i></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12" style="text-align:center">
+      <p>DH Sport - 2019</p>
+    </div>
+  </div>
+</footer>
+  <!-- Footer Fin -->
 
-	<div class="cd-faq__items">
-		<ul id="buys" class="cd-faq__group">
-			<li class="cd-faq__title"><h2>Compras</h2></li>
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>Cómo comprar?</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>Para poder comprar cualquier producto que desees, solo debes estar registrado, si no tienes una cuenta puedes crearla "aqui". Es muy sencillo y solo tomará 5 minutos. </p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			</li>
+  <!-- Subir -->
+    <div id='subir'>
+      <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+    </div>
+  <!-- Subir -->
 
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>Pago</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>Una vez seleccionado el producto, se incluira el producto en tu carrito de compras, en donde podrás agregar o quitar más productos antes de finalizar tu compra y abonar mediante Efectivo o Tarjetas de Crédito / Débito. </p>
-          </div>
-				</div> <!-- cd-faq__content -->
-
-
-
-
-		</ul> <!-- cd-faq__group -->
-
-		<ul id="mobile" class="cd-faq__group">
-			<li class="cd-faq__title"><h2>Devoluciones</h2></li>
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>Que hágo si el producto no es el esperado?</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>No te preocupes. En caso de que el producto que llegó a tu domicilio, no es el que esperabas, nos avisás y lo pasamos a buscar por tu casa sin cargo alguno y te devolvemos el dinero.</p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			</li>
-
-
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>Que pasa si no quiero el dinero?</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>No hay problema, podés elegir cualquier otro producto y validamos la diferencia en cualquiera de los casos.</p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			</li>
-		</ul>
-
-
-		</ul> <!-- cd-faq__group -->
-
-
-
-		<ul id="payments" class="cd-faq__group">
-			<li class="cd-faq__title"><h2>Medios de Pago</h2></li>
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>Tarjeta de crédito / débito</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>Podés adquirir cualquiera de nuestros productos, abonando con tarjeta de crédito o débito, y aproechando las promociones de cada caso.</p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			</li>
-
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>Efectivo</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>Al seleccionar cualquiera de nuestros prodcutos, eligiendo forma de pago Efectivo, se creara un código de barras el cual podrás abonar directamente en cualquier sucursal de Rapipágo o Pagofácil de tu ciudad.</p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			</li>
-
-
-	<a href="#0" class="cd-faq__close-panel text-replace">Close!</a>
-
-  <div class="cd-faq__overlay" aria-hidden="true"></div>
-</section> <!-- cd-faq -->
-<script src="js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
-<script src="js/main.js"></script>
-</body>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
