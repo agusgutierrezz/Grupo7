@@ -1,0 +1,514 @@
+/***
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+body {
+  background: #F1F3FA;
+}
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+
+/* CAJA TEST */
+.caja{
+  /* border: 1px dashed red;
+  box-sizing: border-box; */
+  display: flex;
+  justify-content: center;
+}
+/* CAJA TEST FIN */
+/* Subir */
+#subir{
+  position: fixed;
+  right: 25px;
+  bottom: 15px;
+  overflow: hidden;
+}
+i.fas.fa-arrow-circle-up{
+  color: rgb(215, 43, 43);
+  font-size: 3em;
+}
+#subir a i:hover{
+  color: rgb(209, 79, 79);
+}
+/* modal */
+.nav-tabs{
+  background-color:#161616;
+}
+.tab-content{
+    background-color:#484a51;
+    color:#aaa;
+    padding:5px
+}
+.nav-tabs > li > a{
+  border: medium none;
+  color: #aaa;
+}
+.nav-tabs > li > a:hover{
+  background-color: #303136 !important;
+    border: medium none;
+    border-radius: 0;
+    color:#fff;
+}
+.modal-footer{
+  border-top: none;
+  display: inline;
+  padding: 0px;
+}
+.modal-footer p{
+  color: #c4c4c4;
+}
+.modal-footer p a{
+  font-weight: bold;
+  color: #fff;
+}
+.inputWidthIcon input {
+  padding-left: 7%;
+  border: 2px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 45px;
+  font-size: 20px;
+}
+.inputWidthIcon{
+  position: relative;
+  transition: .3s;
+  margin-bottom: 10px;
+
+}
+.inputWidthIcon i{
+  position: absolute;
+  left: 2%;
+  top: 15px;
+  color: #aaa;
+}
+.inputWidthIcon:hover i{
+  color: #dc3545;
+}
+.inputWidthIcon:hover input{
+  color: #dc3545;
+}
+.inputWidthIcon:focus{
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+.inputWidthIcon:focus input{
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+.inputWidthIcon input:focus{
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+.modal-footer p{
+  padding-left: 4%;
+}
+
+/* Modal Carrito */
+.modal.fade .modal-dialog .modal-content{
+  background-color: #161616;
+}
+.modal-content .table{
+  color: #fff;
+}
+.modal-content h4{
+  color: #dc3545;
+}
+
+/* navbar */
+.navbar{
+  overflow: hidden;
+}
+.nav-link{
+  color: grey;
+}
+.nav-link:hover{
+  color: rgb(241, 61, 61);
+}
+.navbar-brand.ml-2{
+  font-size: 2em;
+}
+.form-inline .form-control:focus{
+  border-color: #e41b1b;
+  box-shadow: 0 0 0 0.2rem rgba(167, 71, 40, 0.25);
+}
+.fas.fa-search{
+  color: red;
+}
+/* NavBar Fin */
+
+/* Carousel */
+.carousel.slide{
+  background-color: white;
+}
+.fas.fa-angle-left, .fas.fa-angle-right{
+  color: red;
+  font-size: 3em;
+}
+.w-25{
+  margin: auto;
+}
+.SubCarousel{
+  margin: auto;
+  width: 5%;
+}
+.carousel.slide.subBg{
+background-color: rgb(33, 33, 33);
+}
+#carousel{
+  margin-top: 11em;
+}
+/* Carousel Fin */
+
+/* SubCarousel */
+/* Flexbox para centrar */
+.carousel-item.active{
+  display: flex!important;
+  justify-content: space-around;
+  align-items: center;
+}
+.carousel-item.active p{
+  padding-top: 1%;
+}
+.carousel-item.active a{
+  color: rgb(214, 37, 37);
+}
+.carousel-item.active img{
+  width: 5%;
+}
+/* Fin de Flexbox */
+/* SubCarousel Fin */
+
+/* Articulos */
+.imgCenter{
+  /* margin: 0; */
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  overflow:hidden;
+}
+/* Zoom */
+.zoom {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    /*background:#f5f5f5;*/
+    text-align: center;
+}
+
+.zoom:hover {
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.15);
+    border-radius: 1rem;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    z-index: 1;
+    background:;
+}
+
+.caja img{
+  /* border: 1px grey solid;
+  border-radius: 1rem; */
+  margin: 1em;
+}
+
+.articulos{
+  overflow: hidden;
+}
+/* Articulos Fin */
+
+/* Contacto */
+.container-fluid.contact-form{
+  /* background: rgb(35, 78, 124); */
+}
+.contact-form{
+    background: #000101;
+    /* margin-top: 1%; */
+    /* margin-bottom: 1%; */
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+
+}
+/*Cambiar color de foco en formulario*/
+.contact-form .form-control:focus{
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+
+}
+.contact-image{
+    text-align: center;
+}
+/* .contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+} */
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #AAA;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+iframe{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -20px;
+
+}
+/* Contacto Fin */
+
+/* Footer */
+footer{
+  color: white;
+  background: rgb(34, 34, 34);
+
+}
+.parrafo{
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.parrafo p a{
+  text-decoration: none;
+  color: white;
+}
+.parrafo p a:hover{
+  color: red;
+}
+.sociales {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sociales a {
+  padding: 1%;
+  text-decoration: none;
+  color: white;
+}
+.sociales a:hover{
+  color: red;
+}
+
+/* MEDIAQUERYS */
+/* De 576px a 767px resolver porque no me toma el margin top */
+
+@media only screen and (max-width: 575px) {
+form.form-inline.justify-content-center.my-auto.w-100 input{
+  display: none!important;
+}
+.navbar{
+  flex-wrap: nowrap!important;
+}
+.navbar-brand.ml-2{
+  display: none;
+}
+.navbar-brand.ml-2.oculto{
+  display: inline!important;
+}
+
+}
+@media only screen and (min-width: 576px) {
+  #carousel{
+    margin-top: 4.5em;
+  }
+  .navbar-brand.ml-2.oculto{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 770px) {
+  #carousel{
+    margin-top: 5.5em;
+  }
+.btn.btn-danger.my-2.my-sm-0{
+  display: none;
+  }
+  .btn.btn-outline-secondary{
+    /* position: absolute; */
+  }
+  a.nav-link.ocultar{
+    display: none;
+  }
+  .navbar-brand.ml-2.oculto{
+    display: none;
+  }
+ }
+
+@media only screen and (min-width: 771px) {
+  .btn.btn-outline-secondary{
+    display: none;
+  }
+  a.nav-link i.fas.fa-envelope.prefix{
+    display: none;
+  }
+  .navbar-brand.ml-2.oculto{
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #carousel{
+    margin-top: 4.5em;
+  }
+.btn.btn-outline-secondary{
+  display: none;
+}
+a.nav-link i.fas.fa-envelope.prefix{
+  display: none;
+}
+.navbar-brand.ml-2.oculto{
+  display: none;
+}
+ }
+
+
+@media only screen and (min-width: 1200px) {
+  #carousel{
+    margin-top: 4.5em;
+  }
+  .btn.btn-outline-secondary{
+    display: none;
+  }
+  a.nav-link i.fas.fa-envelope.prefix{
+    display: none;
+  }
+  .navbar-brand.ml-2.oculto{
+    display: none;
+  }
+
+ }
