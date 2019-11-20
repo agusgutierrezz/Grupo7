@@ -185,7 +185,9 @@ header h1{
   font-style: italic;
   font-size: 3.5rem;
 }
-
+.vip-products{
+  overflow: hidden;
+}
 .product{
   position: relative;
   height: 35rem;
