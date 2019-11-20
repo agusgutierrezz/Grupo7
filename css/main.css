@@ -134,8 +134,11 @@ i.fas.fa-arrow-circle-up{
   color: red;
   font-size: 3em;
 }
-.w-25{
+.w-100{
   margin: auto;
+}
+#carousel .carousel-inner{
+  /* height: ; */
 }
 .SubCarousel{
   margin: auto;
@@ -160,7 +163,7 @@ background-color: rgb(33, 33, 33);
   padding-top: 1%;
 }
 .carousel-item.active a{
-  color: rgb(214, 37, 37);
+  color: rgb(255, 255, 255);
 }
 .carousel-item.active img{
   width: 5%;
@@ -326,6 +329,9 @@ form.form-inline.justify-content-center.my-auto.w-100 input{
 .navbar-brand.ml-2.oculto{
   display: inline!important;
 }
+#subcarousel p a{
+  font-size: 0.8em;
+}
 
 }
 @media only screen and (min-width: 576px) {
@@ -340,7 +346,7 @@ form.form-inline.justify-content-center.my-auto.w-100 input{
 
 @media only screen and (max-width: 770px) {
   #carousel{
-    margin-top: 5.5em;
+    margin-top: 4.5em;
   }
 .btn.btn-danger.my-2.my-sm-0{
   display: none;
