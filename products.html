@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#161616">
+    <meta name="theme-color" content="#161616">
     <!-- CSS -->
     <link rel="stylesheet" href="css/products.css">
     <!-- Google FONTS -->
@@ -15,116 +17,195 @@
 <body>
 
   <!--Modal: Login / Register Form-->
-  <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog cascading-modal" role="document">
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+  <!--Content-->
+  <div class="modal-content">
 
-      <!--Content-->
-      <div class="modal-content">
+    <!--Modal cascading tabs-->
+    <div class="modal-c-tabs">
 
-        <!--Modal cascading tabs-->
-        <div class="modal-c-tabs">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+            Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+            Registrar</a>
+        </li>
+      </ul>
 
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>Login</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>Registrar</a>
-            </li>
-          </ul>
+      <!-- Tab panels -->
+      <div class="tab-content">
+        <!--Panel 7-->
+        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
-          <!-- Tab panels -->
-          <div class="tab-content">
-
-            <!--Panel 7-->
-            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-
-              <!--Body-->
-              <div class="modal-body mb-1">
-                <div class="inputWidthIcon">
-                  <i class="fas fa-envelope prefix"></i>
-                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" placeholder="Ingresá tu email">
-                </div>
-
-                <div class="inputWidthIcon">
-                  <i class="fas fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Password">
-                </div>
-                <div class="text-center mt-2">
-                  <button class="btn btn-primary">Login <i class="fas fa-sign-in ml-1"></i></button>
-                </div>
-              </div>
-
-              <!--Footer-->
-              <div class="modal-footer">
-                <p>Todavía no te registrás? <a href="#" class="blue-text">Registrate</a></p>
-                <p>Olvidaste tu <a href="#" class="blue-text">Password?</a></p>
-              </div>
-
+          <!--Body-->
+          <div class="modal-body mb-1">
+            <div class="inputWidthIcon">
+              <i class="fas fa-envelope prefix"></i>
+              <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" placeholder="Ingresá tu email">
             </div>
 
-            <!--Panel 8-->
-            <div class="tab-pane fade" id="panel8" role="tabpanel">
+            <div class="inputWidthIcon">
+              <i class="fas fa-lock prefix"></i>
+              <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Password">
+            </div>
+            <div class="text-center mt-2">
+              <button class="btn btn-danger">Login <i class="fas fa-sign-in ml-1"></i></button>
+            </div>
+          </div>
+          <!--Footer-->
+          <div class="modal-footer">
+              <p>Todavía no te registrás? <a href="#" class="blue-text">Registrate</a></p>
+              <p>Olvidaste tu <a href="#" class="blue-text">Password?</a></p>
+          </div>
 
-              <!--Body-->
-              <div class="modal-body">
-                <div class="form-row">
-                  <div class="col">
-                    <div class="inputWidthIcon">
-                      <input type="text" class="form-control" placeholder="Ingresa tu Nombre">
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="inputWidthIcon">
-                      <input type="text" class="form-control" placeholder="Ingresa tu apellido">
-                    </div>
-                  </div>
-                </div>
-                <div class="inputWidthIcon">
-                  <i class="fas fa-envelope prefix"></i>
-                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" placeholder="Ingresá tu email">
-                </div>
+        </div>
+        <!--/.Panel 7-->
 
-                <div class="inputWidthIcon">
-                  <i class="fas fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" placeholder="Password">
-                </div>
+        <!--Panel 8-->
+        <div class="tab-pane fade" id="panel8" role="tabpanel">
 
-                <div class="inputWidthIcon">
-                  <i class="fas fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" placeholder="Repite la Password">
-                </div>
+          <!--Body-->
+          <div class="modal-body">
 
-                <div class="text-center form-sm mt-2">
-                  <button class="btn btn-primary">Sign up <i class="fas fa-sign-in ml-1"></i></button>
-                </div>
-              </div>
-
-              <!--Footer-->
-              <div class="modal-footer">
-                <p class="pt-1">Ya tenés cuenta? <a href="#" class="blue-text">Login</a></p>
+            <div class="form-row">
+            <div class="col">
+              <div class="inputWidthIcon">
+                <input type="text" class="form-control" placeholder="Ingresa tu Nombre">
               </div>
             </div>
-          <!--/.Panel 8-->
+            <div class="col">
+              <div class="inputWidthIcon">
+                <input type="text" class="form-control" placeholder="Ingresa tu apellido">
+              </div>
+            </div>
+          </div>
+            <div class="inputWidthIcon">
+              <i class="fas fa-envelope prefix"></i>
+              <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" placeholder="Ingresá tu email">
+            </div>
+
+            <div class="inputWidthIcon">
+              <i class="fas fa-lock prefix"></i>
+              <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" placeholder="Password">
+            </div>
+
+            <div class="inputWidthIcon">
+              <i class="fas fa-lock prefix"></i>
+              <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" placeholder="Repite la Password">
+            </div>
+
+            <div class="text-center form-sm mt-2">
+              <button class="btn btn-danger">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+            </div>
+
+          </div>
+          <!--Footer-->
+          <div class="modal-footer">
+              <p class="pt-1">Ya tenés cuenta? <a href="#" class="blue-text">Login</a></p>
           </div>
         </div>
+        <!--/.Panel 8-->
       </div>
-    <!--/.Content-->
+
     </div>
   </div>
-  <!--Modal: Login / Register Form-->
+  <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+<!-- Modal: modalCart -->
+<div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Tu compra</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Remover</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Producto 1</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Producto 2</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Producto 3</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Producto 4</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr class="total">
+              <th scope="row">5</th>
+              <td>Total</td>
+              <td>$ 400</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cerrar</button>
+        <button class="btn btn-danger">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: modalCart -->
 
   <nav class="navbar fixed-top  justify-content-center navbar-expand-sm navbar-dark bg-dark">
-    <a name='home' class="navbar-brand ml-2" href="index.html"><font color='red'>D</font>H <font color='red'>S</font>port</a>
-    <form class="form-inline justify-content-center my-auto w-100">
-      <input class="form-control d-inline w-75 mr-sm-2" type="search" placeholder="Buscar: Reloj, Marca, Modelo, Color...">
-      <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
-      <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm"><i class="fas fa-user d-inline mr-2"></i>Login</a>
-      <a class="nav-link" href="#">Contactanos</a>
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-shopping-cart"></i></a>
-  </nav>
+
+        <a name='home' class="navbar-brand ml-2" href="#"><font color='red'>D</font>H <font color='red'>S</font>port</a>
+        <a name='home' class="navbar-brand ml-2 oculto" href="#"><font color='red'>D</font>H<font color='red'>S</font></a>
+
+        <form class="form-inline justify-content-center my-auto w-100">
+            <input class="form-control d-inline w-75 mr-sm-2" type="search" placeholder="Buscar: Reloj, Marca, Modelo, Color...">
+            <button class="btn btn-outline-secondary" type="submit">
+            <i class="fas fa-search"></i></button>
+            <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm"><i class="fas fa-user d-inline mr-2"></i>Login</a>
+        <a class="nav-link" href="#"><i class="fas fa-envelope prefix"></i></a>
+        <a class="nav-link ocultar" href="#">Contactanos</a>
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#modalCart"><i class="fas fa-shopping-cart"></i></a>
+
+    </nav>
+
   <!-- NavBar Fin -->
 
   <!--Nombre CATEGORIA-->
@@ -324,7 +405,7 @@
     <!-- Modal Info de Productos FIN -->
 
     <h2>GARMIN APPROACH® S60 - GOLF - 18 HOYOS</h2>
-    <p>$4999.99</p>
+    <p class="precio">$4999.99</p>
 
   </article>
   <!-- Producto 1 Fin -->
@@ -541,7 +622,7 @@
     <!-- Modal Info de Productos FIN -->
     </div>
     <h2>GARMIN FORERUNNER 35 RELOJ GPS PULSÓMETRO MUÑECA NEGRO</h2>
-    <p>$1.789</p>
+    <p class="precio">$1.789</p>
   </article>
 
   <!-- Producto 3 -->
@@ -740,7 +821,7 @@
       </div>
     </div>
     <h2>GARMIN FORERUNNER 235 HRM RELOJ GPS PULSÓMETRO MUÑECA</h2>
-    <p>$3.200</p>
+    <p class="precio">$3.200</p>
   </article>
 
   <!-- Producto 4 -->
@@ -942,7 +1023,7 @@
       </div>
     </div>
   <h2>RELOJ GPS POLAR M430 PULSÓMETRO EN MUÑECA NEGRO</h2>
-  <p>$2.500</p>
+  <p class="precio">$2.500</p>
   </article>
 
   <!-- Producto 5 -->
@@ -1099,7 +1180,7 @@
       </div>
     </div>
     <h2>SUUNTO SPARTAN TRAINER RELOJ GPS AMBAR</h2>
-    <p>$1.800</p>
+    <p class="precio">$1.800</p>
   </article>
 </section>
 <!-- Seccion de Productos FIN -->

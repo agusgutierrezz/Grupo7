@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="apple-mobile-web-app-status-bar-style" content="#161616">
+    <meta name="theme-color" content="#161616">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Bootstrap -->
@@ -52,7 +53,7 @@
               <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Password">
             </div>
             <div class="text-center mt-2">
-              <button class="btn btn-primary">Login <i class="fas fa-sign-in ml-1"></i></button>
+              <button class="btn btn-danger">Login <i class="fas fa-sign-in ml-1"></i></button>
             </div>
           </div>
           <!--Footer-->
@@ -98,7 +99,7 @@
             </div>
 
             <div class="text-center form-sm mt-2">
-              <button class="btn btn-primary">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+              <button class="btn btn-danger">Sign up <i class="fas fa-sign-in ml-1"></i></button>
             </div>
 
           </div>
@@ -117,6 +118,75 @@
 </div>
 <!--Modal: Login / Register Form-->
 
+<!-- Modal: modalCart -->
+<div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Tu compra</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Remover</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Producto 1</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Producto 2</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Producto 3</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Producto 4</td>
+              <td>$ 100</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+            <tr class="total">
+              <th scope="row">5</th>
+              <td>Total</td>
+              <td>$ 400</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cerrar</button>
+        <button class="btn btn-danger">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: modalCart -->
+
   <nav class="navbar fixed-top  justify-content-center navbar-expand-sm navbar-dark bg-dark">
 
         <a name='home' class="navbar-brand ml-2" href="#"><font color='red'>D</font>H <font color='red'>S</font>port</a>
@@ -131,7 +201,7 @@
         <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm"><i class="fas fa-user d-inline mr-2"></i>Login</a>
         <a class="nav-link" href="#"><i class="fas fa-envelope prefix"></i></a>
         <a class="nav-link ocultar" href="#">Contactanos</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-shopping-cart"></i></a>
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#modalCart"><i class="fas fa-shopping-cart"></i></a>
 
     </nav>
 
@@ -165,9 +235,12 @@
   <div id="subcarousel" class="carousel slide subBg" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-interval="10000">
-        <img src="img/reloj.webp" class="" alt="...">
+        <p><a href="products.html">Relojes</a></p>
+        <p><a href="products.html">Camaras</a></p>
+        <p><a href="products.html">Auriculares</a></p>
+        <!-- <img src="img/reloj.webp" class="" alt="...">
         <img src="img/auriculares.webp" class="" alt="...">
-        <img src="img/camara.webp" class="" alt="...">
+        <img src="img/camara.webp" class="" alt="..."> -->
       </div>
     </div>
     <a class="carousel-control-prev" href="#subcarousel" role="button" data-slide="prev">
@@ -185,23 +258,23 @@
   <div class="container-fluid articulos">
     <div class="row imgCenter">
       <div class="col-6 col-sm-6 col-md-4 caja">
-        <img src="img/reloj.webp" class="w-100" alt="...">
+        <img src="img/reloj.webp" class="w-75 zoom" alt="...">
       </div>
       <div class="col-6 col-sm-6 col-md-4 caja">
-        <img src="img/auriculares.webp" class="w-100" alt="...">
+        <img src="img/auriculares.webp" class="w-75 zoom" alt="...">
       </div>
       <div class="col-6 col-sm-6 col-md-4 caja">
-        <img src="img/camara.webp" class="w-100" alt="...">
+        <img src="img/camara.webp" class="w-75 zoom" alt="...">
       </div>
 
       <div class="col-6 col-sm-6 col-md-4 caja">
-        <img src="img/reloj.webp" class="w-100" alt="...">
+        <img src="img/mount camera.jpg" class="w-75 zoom" alt="...">
       </div>
       <div class="col-6 col-sm-6 col-md-4 caja">
-        <img src="img/auriculares.webp" class="w-100" alt="...">
+        <img src="img/telescopio-monocular.jpg" class="w-75 zoom" alt="...">
       </div>
       <div class="col-6 col-sm-6 col-md-4 caja">
-        <img src="img/camara.webp" class="w-100" alt="...">
+        <img src="img/store-blast-basketball-box.jpg" class="w-75 zoom" alt="...">
       </div>
     </div>
   </div>

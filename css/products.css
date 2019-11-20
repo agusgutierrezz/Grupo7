@@ -55,8 +55,31 @@
 .inputWidthIcon:hover input{
   color: #dc3545;
 }
+.inputWidthIcon:focus{
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+.inputWidthIcon:focus input{
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+.inputWidthIcon input:focus{
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
 .modal-footer p{
   padding-left: 4%;
+}
+
+/* Modal Carrito */
+.modal.fade .modal-dialog .modal-content{
+  background-color: #161616;
+}
+.modal-content .table{
+  color: #fff;
+}
+.modal-content h4{
+  color: #dc3545;
 }
 
 /* navbar */
@@ -70,13 +93,81 @@
   color: rgb(241, 61, 61);
 }
 .navbar-brand.ml-2{
-  font-size: 2em;
+  display: none;
+}
+.navbar-brand.ml-2.oculto{
+  display: inline!important;
 }
 .form-inline .form-control:focus{
   border-color: #e41b1b;
   box-shadow: 0 0 0 0.2rem rgba(167, 71, 40, 0.25);
 }
+.fas.fa-search{
+  color: red;
+}
 /* NavBar Fin */
+
+/* Contacto */
+.container-fluid.contact-form{
+  /* background: rgb(35, 78, 124); */
+}
+.contact-form{
+    background: #000101;
+    /* margin-top: 1%; */
+    /* margin-bottom: 1%; */
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+
+}
+/*Cambiar color de foco en formulario*/
+.contact-form .form-control:focus{
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+
+}
+.contact-image{
+    text-align: center;
+}
+
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #AAA;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+iframe{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -20px;
+
+}
+/* Contacto Fin */
 
 /* Productos */
 header{
@@ -88,7 +179,7 @@ header h1{
   color: red;
   font-family: 'Alfa Slab One', cursive;
   text-align: center;
-  padding: 7rem 1rem;
+  padding: 6rem 1rem;
   margin-bottom: .5rem;
   margin-top: 0;
   font-style: italic;
@@ -139,7 +230,7 @@ header h1{
   padding: 1rem;
 }
 
-p{
+.precio{
   position: absolute;
   top: 60%;
   color: black;
@@ -237,7 +328,7 @@ i.fas.fa-arrow-circle-up{
   border-radius: 10px;
 }
 
-p {
+.precio {
   position: absolute;
   top: 55%;
   color: black;
@@ -263,6 +354,18 @@ p {
   font-size: x-large;
   padding: 1rem;
 }
+
+.btn.btn-outline-secondary{
+  display: none;
+}
+
+a.nav-link i.fas.fa-envelope.prefix{
+  display: none;
+}
+
+.navbar-brand.ml-2{
+  font-size: 2em;
+}
 }
 /*
   ##Device = Desktops
@@ -271,43 +374,55 @@ p {
 
 @media only screen and (min-width: 1224px) and (max-device-width: 1366px) {
 
-  .product {
-      position: relative;
-      height: 26rem;
-      width: 21%;
-      padding: 0%;
-      float: left;
-      border-style: solid;
-      margin: 2%;
-      border-radius: 10px;
-  }
+.product {
+    position: relative;
+    height: 26rem;
+    width: 21%;
+    padding: 0%;
+    float: left;
+    border-style: solid;
+    margin: 2%;
+    border-radius: 10px;
+}
 
-  p {
-    position: absolute;
-    top: 67%;
-    margin-left: 5%;
-    color: black;
-    font-size: larger;
-    background-color: red;
-    padding: 0.5rem 0.5rem;
-    left: 1rem;
-    border-radius: .5rem;
-    font-family: 'Anton', sans-serif;
+.precio {
+  position: absolute;
+  top: 67%;
+  margin-left: 5%;
+  color: black;
+  font-size: larger;
+  background-color: red;
+  padding: 0.5rem 0.5rem;
+  left: 1rem;
+  border-radius: .5rem;
+  font-family: 'Anton', sans-serif;
 }
 
 .btn-verMas {
-    margin-top: 98%;
-    margin-left: 59%;
-    background-color: red;
+  margin-top: 98%;
+  margin-left: 59%;
+  background-color: red;
 }
 
 .product h2 {
-    position: absolute;
-    top: 75%;
-    color: black;
-    font-family: 'Anton', sans-serif;
-    text-align: center;
-    font-size: x-large;
-    padding: 1rem;
+  position: absolute;
+  top: 75%;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: x-large;
+  padding: 1rem;
+}
+
+.btn.btn-outline-secondary{
+  display: none;
+}
+
+a.nav-link i.fas.fa-envelope.prefix{
+  display: none;
+}
+
+.navbar-brand.ml-2.oculto{
+  display: none;
 }
 }
